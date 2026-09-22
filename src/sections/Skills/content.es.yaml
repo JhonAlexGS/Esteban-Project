@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------------------
+# STACK TÉCNICO — español.
+# Cada bloque de `groups` es una tarjeta. Añade o quita tecnologías dentro de
+# `items` sin tocar el código.
+# `icon` acepta: terminal, layers, devops, cloud, server, database, tool, cpu,
+# shield, sun, code, radio, globe, book.
+#
+# `size` controla el ancho de la tarjeta en escritorio (rejilla de 6 columnas):
+#   narrow = 2 columnas · half = 3 columnas · wide = 4 columnas
+# Procura que los tamaños de cada fila sumen 6, así no quedan huecos.
+# El reparto actual es: 2+2+2 · 3+3 · 3+3 · 4+2
+# ---------------------------------------------------------------------------
+
+eyebrow: Stack técnico
+title: Las herramientas con las que construyo
+lead: >-
+  Del código y el diseño CAD al PLC, el robot y el panel solar: un stack que
+  cubre el recorrido completo de la mecatrónica, con la IA como capa transversal.
+
+groups:
+  - icon: terminal
+    size: narrow
+    title: Lenguajes de programación
+    items: [Python, JavaScript, C/C++, MATLAB, Arduino, HTML/CSS]
+
+  - icon: layers
+    size: narrow
+    title: Software CAD
+    items: [SolidWorks, Solid Edge, FreeDFD]
+
+  - icon: cpu
+    size: narrow
+    title: Herramientas de IA
+    items: [Claude, ChatGPT, Gemini, Midjourney]
+
+  - icon: devops
+    size: half
+    title: Automatización
+    items: [PLC, Sistemas SCADA, Control industrial, Instrumentación]
+
+  - icon: tool
+    size: half
+    title: Robótica
+    items: [Robótica antropomórfica, Sensores y actuadores, Control de movimiento, Diseño mecánico]
+
+  - icon: sun
+    size: half
+    title: Energía solar
+    items: [Sistemas fotovoltaicos, Diseño de instalaciones, Energías renovables]
+
+  - icon: shield
+    size: half
+    title: Ciberseguridad
+    items: [Seguridad informática, Protección de datos, Análisis de vulnerabilidades, Redes seguras]
+
+  - icon: code
+    size: wide
+    title: Herramientas
+    items: [Arduino IDE, MATLAB, Adobe Dreamweaver, GitHub, Microsoft Office, Moodle]
+
+  - icon: server
+    size: narrow
+    title: Oficios prácticos
+    items: [Carpintería, Redes eléctricas, Mantenimiento general]
+
+languagesTitle: Idiomas
+languages:
+  - name: Español
+    level: Nativo

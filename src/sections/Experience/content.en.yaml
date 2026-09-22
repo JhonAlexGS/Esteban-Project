@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# WORK EXPERIENCE — English.
+#
+# `items` is the list of jobs, from most recent to oldest.
+# To add one, copy a whole block keeping the indentation.
+#
+# Fields for each job:
+#   company    → company name
+#   role       → your role
+#   location   → city and country (optional: hidden when omitted)
+#   period     → dates (optional: when omitted, the dates line isn't shown)
+#   highlights → what you did there (one line per achievement)
+#   stack      → technologies and areas of work
+# ---------------------------------------------------------------------------
+
+eyebrow: Experience
+title: Four years across engineering, IT and the classroom
+lead: >-
+  From teaching robotics and programming logic to implementing artificial
+  intelligence, networks and solar energy inside a company.
+
+items:
+  - company: Grupo Empresarial Colombia GED SAS
+    role: Mechatronics Engineer
+    period: Oct 2023 – Aug 2026
+    highlights:
+      - Implemented artificial intelligence solutions to optimize processes.
+      - Installed and provided technical support for photovoltaic solar energy systems.
+      - Administered, implemented and supported the corporate IT systems.
+      - Managed and maintained wired and wireless networks.
+      - Built and maintained the corporate website and supported social media management.
+      - Preventive and corrective hardware maintenance, software licensing and technology inventory.
+      - Technical support for internal users on hardware and software.
+    stack: [Artificial intelligence, Solar energy, Networking, Web development, Technical support, Digital marketing]
+
+  - company: AXCOR
+    role: IT & Web Development Lead
+    period: Dec 2022 – Oct 2023
+    highlights:
+      - Coordinated teams and supervised operations.
+      - Built and maintained the corporate website.
+      - Designed and executed digital marketing positioning strategies.
+      - Computer assembly and maintenance, with on-site and remote technical support.
+      - Configured and managed wired and wireless networks.
+      - Managed technology inventory, quality control and strategic planning.
+    stack: [Web development, Networking, Technical support, Digital marketing, IT management]
+
+  - company: Colegio Enrique Olaya Herrera
+    role: Educational Robotics Teacher (Internship)
+    period: Aug 2022 – Dec 2022
+    highlights:
+      - Taught in the educational robotics area.
+      - Designed and delivered the C++ programming logic course.
+      - Hands-on training on the practical use of microcontrollers.
+      - Applied creative research methodologies to technology learning.
+      - Managed course content on Moodle and fostered cooperative learning.
+    stack: [Robotics, C++, Microcontrollers, Arduino, Moodle]

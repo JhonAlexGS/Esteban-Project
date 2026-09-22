@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------------------
+# TECH STACK — English.
+# Each block in `groups` is a card. Add or remove technologies inside `items`
+# without touching code.
+# `icon` accepts: terminal, layers, devops, cloud, server, database, tool, cpu,
+# shield, sun, code, radio, globe, book.
+#
+# `size` sets the card width on desktop (6-column grid):
+#   narrow = 2 columns · half = 3 columns · wide = 4 columns
+# Try to make each row add up to 6 so there are no gaps.
+# Current layout: 2+2+2 · 3+3 · 3+3 · 4+2
+# ---------------------------------------------------------------------------
+
+eyebrow: Tech stack
+title: The tools I build with
+lead: >-
+  From code and CAD design to the PLC, the robot and the solar panel: a stack
+  that covers the whole mechatronics journey, with AI as a cross-cutting layer.
+
+groups:
+  - icon: terminal
+    size: narrow
+    title: Programming languages
+    items: [Python, JavaScript, C/C++, MATLAB, Arduino, HTML/CSS]
+
+  - icon: layers
+    size: narrow
+    title: CAD software
+    items: [SolidWorks, Solid Edge, FreeDFD]
+
+  - icon: cpu
+    size: narrow
+    title: AI tools
+    items: [Claude, ChatGPT, Gemini, Midjourney]
+
+  - icon: devops
+    size: half
+    title: Automation
+    items: [PLC, SCADA systems, Industrial control, Instrumentation]
+
+  - icon: tool
+    size: half
+    title: Robotics
+    items: [Anthropomorphic robotics, Sensors & actuators, Motion control, Mechanical design]
+
+  - icon: sun
+    size: half
+    title: Solar energy
+    items: [Photovoltaic systems, Installation design, Renewable energy]
+
+  - icon: shield
+    size: half
+    title: Cybersecurity
+    items: [Information security, Data protection, Vulnerability analysis, Secure networks]
+
+  - icon: code
+    size: wide
+    title: Tools
+    items: [Arduino IDE, MATLAB, Adobe Dreamweaver, GitHub, Microsoft Office, Moodle]
+
+  - icon: server
+    size: narrow
+    title: Hands-on trades
+    items: [Carpentry, Electrical wiring, General maintenance]
+
+languagesTitle: Languages
+languages:
+  - name: Spanish
+    level: Native

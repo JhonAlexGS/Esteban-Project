@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------------------
+# Textos de la interfaz en ESPAÑOL (navegación, botones, footer, accesibilidad).
+# El contenido de cada sección vive en `src/sections/<Seccion>/content.es.*`.
+# ---------------------------------------------------------------------------
+
+nav:
+  about: Sobre mí
+  experience: Experiencia
+  projects: Proyectos
+  skills: Stack
+  education: Formación
+  testimonials: Referencias
+  contact: Contacto
+
+actions:
+  contact: Contáctame
+  viewProjects: Ver proyectos
+  viewProject: Ver proyecto
+  backToTop: Volver arriba
+  openMenu: Abrir menú
+  closeMenu: Cerrar menú
+  toggleTheme: Cambiar tema
+  toggleThemeToLight: Activar modo claro
+  toggleThemeToDark: Activar modo oscuro
+  toggleLanguage: Cambiar idioma
+  skipToContent: Saltar al contenido
+  close: Cerrar
+  readFull: Leer completo
+  readFullOf: Leer el testimonio completo de {{name}}
+
+resume:
+  label: Hoja de vida
+  open: Descargar hoja de vida
+  close: Cerrar descargas
+  standard: CV en PDF
+  standardNote: Versión con diseño, para leer
+  ats: Versión para ATS
+  atsNote: Texto plano, para filtros automáticos
+
+language:
+  current: Español
+  short: ES
+  other: English
+  otherShort: EN
+
+footer:
+  tagline: Ingeniería mecatrónica, robótica, automatización e inteligencia artificial.
+  rights: Todos los derechos reservados.
+  builtWith: Hecho con React, Vite, Tailwind CSS y Framer Motion.
+  navTitle: Navegación
+  connectTitle: Conectemos
+
+errors:
+  sectionTitle: No se pudo mostrar esta sección
+  sectionBody: Ocurrió un error al cargar el contenido. Intenta recargar la página.
+  retry: Reintentar

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Esteban Jordan">
+  <defs>
+    <linearGradient id="ej-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140809" />
+      <stop offset="100%" stop-color="#050506" />
+    </linearGradient>
+    <linearGradient id="ej-fg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6B73" />
+      <stop offset="100%" stop-color="#D91A2D" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#ej-bg)" />
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#D91A2D" stroke-opacity="0.4" />
+
+  <!-- Engranaje (mecatrónica) -->
+  <g transform="translate(32 25)" stroke="url(#ej-fg)" stroke-width="2.4" fill="none" stroke-linecap="round">
+    <circle r="9.5" />
+    <circle r="3.6" fill="#FF6B73" stroke="none" />
+    <path d="M0-13.5v3.2M0 10.3v3.2M-13.5 0h3.2M10.3 0h3.2M-9.5-9.5l2.3 2.3M7.2 7.2l2.3 2.3M-9.5 9.5l2.3-2.3M7.2-7.2l2.3-2.3" />
+  </g>
+
+  <!-- Iniciales EJ -->
+  <text
+    x="32"
+    y="56.5"
+    text-anchor="middle"
+    font-family="Inter, Segoe UI, system-ui, sans-serif"
+    font-size="12"
+    font-weight="700"
+    letter-spacing="0.5"
+    fill="#EDEDEF"
+  >EJ</text>
+</svg>

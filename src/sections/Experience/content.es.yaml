@@ -1,0 +1,57 @@
+# ---------------------------------------------------------------------------
+# EXPERIENCIA LABORAL — español.
+#
+# `items` es la lista de empleos, en orden del más reciente al más antiguo.
+# Para añadir uno, copia un bloque completo respetando la indentación.
+#
+# Campos de cada empleo:
+#   company    → nombre de la empresa
+#   role       → tu cargo
+#   location   → ciudad y país (opcional: si se omite, no se muestra)
+#   period     → fechas (opcional: si se omite, no se muestra la línea de fechas)
+#   highlights → lo que hiciste ahí (una línea por logro)
+#   stack      → tecnologías y áreas de trabajo
+# ---------------------------------------------------------------------------
+
+eyebrow: Experiencia
+title: Cuatro años entre la ingeniería, la TI y el aula
+lead: >-
+  De enseñar robótica y lógica de programación a implementar inteligencia
+  artificial, redes y energía solar dentro de una empresa.
+
+items:
+  - company: Grupo Empresarial Colombia GED SAS
+    role: Ingeniero Mecatrónico
+    period: Oct 2023 – Ago 2026
+    highlights:
+      - Implementación de soluciones de inteligencia artificial para la optimización de procesos.
+      - Instalación y soporte técnico de sistemas de energía solar fotovoltaica.
+      - Administración, implementación y soporte de los sistemas informáticos corporativos.
+      - Administración y mantenimiento de redes cableadas e inalámbricas.
+      - Creación y mantenimiento de la página web corporativa y apoyo en la gestión de redes sociales.
+      - Mantenimiento preventivo y correctivo de equipos, licenciamiento de software e inventario tecnológico.
+      - Soporte técnico a usuarios internos en hardware y software.
+    stack: [Inteligencia artificial, Energía solar, Redes, Desarrollo web, Soporte técnico, Marketing digital]
+
+  - company: AXCOR
+    role: Encargado de TI y Desarrollo Web
+    period: Dic 2022 – Oct 2023
+    highlights:
+      - Coordinación de equipos y supervisión de operaciones.
+      - Creación y mantenimiento de la página web corporativa.
+      - Desarrollo e implementación de estrategias de posicionamiento en marketing digital.
+      - Mantenimiento y ensamble de computadores, con soporte técnico presencial y remoto.
+      - Administración y configuración de redes cableadas e inalámbricas.
+      - Gestión del inventario tecnológico, control de calidad y planificación estratégica.
+    stack: [Desarrollo web, Redes, Soporte técnico, Marketing digital, Gestión de TI]
+
+  - company: Colegio Enrique Olaya Herrera
+    role: Docente Practicante en Robótica Educativa
+    period: Ago 2022 – Dic 2022
+    highlights:
+      - Enseñanza en el área de robótica educativa.
+      - Desarrollo del curso de lógica de programación en C++.
+      - Formación orientada al uso práctico de microcontroladores.
+      - Aplicación de metodologías de investigación creativa en el aprendizaje tecnológico.
+      - Gestión de contenidos en Moodle y facilitación del aprendizaje cooperativo.
+    stack: [Robótica, C++, Microcontroladores, Arduino, Moodle]

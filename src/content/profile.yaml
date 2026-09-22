@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# Datos de contacto y redes sociales (iguales en español e inglés).
+# Editable sin tocar código: cambia los valores y listo.
+# ---------------------------------------------------------------------------
+
+name: Julio Esteban Jordan Losada
+initials: EJ
+# Nombre corto que aparece junto a las iniciales en el encabezado y el pie.
+brand: Esteban Jordan
+email: estebanjordan666@gmail.com
+phone: "+57 318 333 4341"
+location: Colombia
+
+# Retrato del hero. El archivo vive en la carpeta `public/`, así que para
+# cambiarlo basta con dejar el nuevo ahí y escribir su nombre aquí abajo
+# (no hace falta tocar código).
+#
+# Es una foto con fondo, así que el hero la muestra dentro de un marco
+# redondeado. Recomendado: cuadrada, mínimo 600×600 px.
+photo: perfil.webp
+photoWidth: 720
+photoHeight: 720
+
+# Redes que se muestran en el header, el footer y la sección de contacto.
+# `icon` acepta: github, linkedin, email, phone, location
+#
+# Para añadir GitHub o LinkedIn, quita los `#` del bloque correspondiente y
+# pon la dirección real en `handle` y `url`.
+social:
+  # - id: github
+  #   icon: github
+  #   label: GitHub
+  #   handle: github.com/USUARIO
+  #   url: https://github.com/USUARIO
+  #   showInHeader: true
+
+  # - id: linkedin
+  #   icon: linkedin
+  #   label: LinkedIn
+  #   handle: in/USUARIO
+  #   url: https://www.linkedin.com/in/USUARIO
+  #   showInHeader: true
+
+  - id: email
+    icon: email
+    label: Email
+    handle: estebanjordan666@gmail.com
+    url: mailto:estebanjordan666@gmail.com
+    showInHeader: true

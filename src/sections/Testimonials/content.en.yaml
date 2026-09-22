@@ -1,0 +1,80 @@
+# ---------------------------------------------------------------------------
+# REFERENCES & TESTIMONIALS — English.
+#
+# Each person is shown in one of two ways:
+#   · WITH `quote` → testimonial card (their review, opened in full on click).
+#   · WITHOUT `quote` → reference card (photo, name, role and relationship).
+# That way a real person never appears signing words they didn't write: once
+# you have their words, paste them into `quote` and the card switches itself.
+#
+# Fields for each person:
+#   quote        → what they say about you (optional, see above)
+#   name         → full name
+#   role         → job title
+#   company      → company or university (may be empty)
+#   relationship → how they know you
+#   link         → LinkedIn, portfolio or personal site; empty if none.
+#   initials     → shown in the avatar when there's no photo
+#   photo        → file inside `public/`, e.g. `testimonios/ana.webp`
+#                  Recommended: square, at least 200×200 px
+#   phone        → NOT published. See the note below.
+#   email        → NOT published. See the note below.
+#
+# 🔒  Phone and email are kept here as a contact sheet, but the page
+#     deliberately does NOT render them. They are third-party data and
+#     publishing them on an open site exposes those people to spam.
+# ---------------------------------------------------------------------------
+
+eyebrow: References
+title: People who can speak to my work
+lead: >-
+  Personal and family references who know me closely.
+
+placeholderLabel: Example content
+# Subheading that separates references from testimonials when there are both.
+referencesTitle: References
+
+items:
+  - name: Jhon Alexander García Sierra
+    initials: JG
+    role: Systems & Telecommunications Engineer
+    company: ''
+    relationship: Personal reference
+    link: https://www.linkedin.com/in/jhonalexandergarciasierra
+    photo: 'testimonios/jhon-garcia.webp'
+    phone: "+57 318 211 1063"
+    email: ''
+    quote: ''
+
+  - name: Dayana Michel Trujillo Montaña
+    initials: DT
+    role: Electronics Engineering Student
+    company: ''
+    relationship: Personal reference
+    link: ''
+    photo: 'testimonios/dayana-trujillo.webp'
+    phone: "+57 322 940 5680"
+    email: ''
+    quote: ''
+
+  - name: Andrés Felipe Jordán Gusman
+    initials: AJ
+    role: Civil Engineer
+    company: ''
+    relationship: Family reference
+    link: ''
+    photo: 'testimonios/andres-jordan.webp'
+    phone: "+57 322 309 5291"
+    email: ''
+    quote: ''
+
+  - name: Luz Nury Losada Dussan
+    initials: LL
+    role: Hair Stylist
+    company: ''
+    relationship: Family reference
+    link: ''
+    photo: 'testimonios/luz-losada.webp'
+    phone: "+57 310 293 5025"
+    email: ''
+    quote: ''

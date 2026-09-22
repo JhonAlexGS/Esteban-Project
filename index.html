@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#050506" />
+    <meta
+      name="description"
+      content="Portafolio de Julio Esteban Jordan Losada — Ingeniero Mecatrónico, MSc en Inteligencia Artificial. Robótica, automatización, sistemas y TI."
+    />
+    <meta name="author" content="Julio Esteban Jordan Losada" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Julio Esteban Jordan Losada — Ingeniero Mecatrónico" />
+    <meta
+      property="og:description"
+      content="Mecatrónica + IA: robótica, automatización y soluciones que optimizan procesos."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Esteban Jordan — Ingeniero Mecatrónico</title>
+
+    <script>
+      // Aplica tema e idioma guardados antes del primer paint para evitar parpadeo.
+      ;(function () {
+        try {
+          // Sin preferencia guardada arranca en oscuro: es la identidad rojo y
+          // negro del sitio. El visitante puede cambiarlo con el botón de tema.
+          var theme = localStorage.getItem('ej-theme') || 'dark'
+          document.documentElement.classList.toggle('dark', theme === 'dark')
+          document.documentElement.style.colorScheme = theme
+
+          var lang = localStorage.getItem('ej-lang')
+          if (lang) document.documentElement.lang = lang
+        } catch (e) {
+          /* localStorage bloqueado: se usa el tema oscuro por defecto */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
