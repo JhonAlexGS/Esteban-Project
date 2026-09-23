@@ -14,23 +14,24 @@ photoAlt: Retrato de Julio Esteban Jordan Losada
 
 # El titular se anima palabra por palabra. `headlineAccent` se pinta con el
 # degradado de acento.
-headline: "La tecnología no reemplaza el talento:"
-headlineAccent: lo amplifica
+headline: Toda pregunta esconde una idea
+headlineAccent: y toda idea termina siendo un desafío
 
-# Métricas destacadas (máximo 3 para que no se rompa en móvil).
+# Métricas destacadas (máximo 4). El `label` es opcional: si lo dejas vacío,
+# la cifra se muestra sola.
 stats:
-  - value: 4 años
-    label: De experiencia en ingeniería, sistemas, TI y docencia
+  - value: Ing. Mecatrónico
+    label: CORHUILA, 2023
   - value: COPNIA
-    label: Ingeniero Mecatrónico con Tarjeta Profesional
+    label: Tarjeta Profesional vigente
   - value: MSc IA
-    label: Maestría en Inteligencia Artificial · Sergio Arboleda, 2026
+    label: Sergio Arboleda, 2026
 
 scrollHint: Desliza para explorar
 ---
 
-Robótica, automatización y control, ahora con **inteligencia artificial**.
-Cuatro años implementando soluciones de **IA para optimizar procesos**, dando
-soporte a **sistemas y redes**, desarrollando **páginas web** y apoyando
-instalaciones de **energía solar**, con dominio de **Python**, **C/C++**,
-**MATLAB**, **Arduino** y **SolidWorks**.
+Robótica y control, ahora con **inteligencia artificial**. Cuatro años dando
+soporte a **sistemas, redes y equipos**, desarrollando **páginas web
+corporativas**, implementando **soluciones de IA para optimizar procesos** y
+apoyando instalaciones de **energía solar**. Programo en **Python**, **C/C++**,
+**MATLAB** y **Arduino**, y diseño en CAD con **SolidWorks**.

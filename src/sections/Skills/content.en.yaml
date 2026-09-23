@@ -1,14 +1,18 @@
 # ---------------------------------------------------------------------------
 # TECH STACK — English.
-# Each block in `groups` is a card. Add or remove technologies inside `items`
-# without touching code.
-# `icon` accepts: terminal, layers, devops, cloud, server, database, tool, cpu,
-# shield, sun, code, radio, globe, book.
 #
-# `size` sets the card width on desktop (6-column grid):
-#   narrow = 2 columns · half = 3 columns · wide = 4 columns
-# Try to make each row add up to 6 so there are no gaps.
-# Current layout: 2+2+2 · 3+3 · 3+3 · 4+2
+# Each block in `groups` is a card with its list of skills and the proficiency
+# level of each one (the progress bar).
+#
+# Fields for each skill:
+#   name  → visible name
+#   level → proficiency from 0 to 100 (this fills the bar)
+#   brand → technology logo (optional). Available names live in
+#           `src/components/ui/brands.jsx`; skills that aren't a specific
+#           product (e.g. "Industrial control") are left without `brand`.
+#
+# `icon` is the card icon and accepts: terminal, layers, devops, cloud, server,
+# database, tool, cpu, shield, sun, code, radio, globe, book, award.
 # ---------------------------------------------------------------------------
 
 eyebrow: Tech stack
@@ -19,49 +23,128 @@ lead: >-
 
 groups:
   - icon: terminal
-    size: narrow
-    title: Programming languages
-    items: [Python, JavaScript, C/C++, MATLAB, Arduino, HTML/CSS]
+    title: Programming
+    items:
+      - name: Python
+        level: 80
+        brand: python
+      - name: Arduino
+        level: 85
+        brand: arduino
+      - name: C/C++
+        level: 78
+        brand: cpp
+      - name: JavaScript
+        level: 75
+        brand: javascript
+      - name: MATLAB
+        level: 75
+        brand: matlab
+      - name: HTML/CSS
+        level: 78
+        brand: html
 
   - icon: layers
-    size: narrow
-    title: CAD software
-    items: [SolidWorks, Solid Edge, FreeDFD]
-
-  - icon: cpu
-    size: narrow
-    title: AI tools
-    items: [Claude, ChatGPT, Gemini, Midjourney]
-
-  - icon: devops
-    size: half
-    title: Automation
-    items: [PLC, SCADA systems, Industrial control, Instrumentation]
+    title: CAD design
+    items:
+      - name: SolidWorks
+        level: 75
+        brand: solidworks
+      - name: Solid Edge
+        level: 70
+        brand: solidedge
+      - name: FreeDFD
+        level: 75
+        brand: freedfd
 
   - icon: tool
-    size: half
     title: Robotics
-    items: [Anthropomorphic robotics, Sensors & actuators, Motion control, Mechanical design]
+    items:
+      - name: Sensors & actuators
+        level: 88
+      - name: Anthropomorphic robotics
+        level: 85
+      - name: Mechanical design
+        level: 80
+      - name: Motion control
+        level: 70
+
+  - icon: devops
+    title: Automation
+    items:
+      - name: PLC
+        level: 85
+      - name: Industrial control
+        level: 82
+      - name: Instrumentation
+        level: 80
+      - name: SCADA systems
+        level: 78
+
+  - icon: cpu
+    title: Artificial intelligence
+    items:
+      - name: Data processing
+        level: 78
+      - name: Machine learning
+        level: 75
+      - name: Computer vision
+        level: 72
+      - name: AI-driven automation
+        level: 70
 
   - icon: sun
-    size: half
     title: Solar energy
-    items: [Photovoltaic systems, Installation design, Renewable energy]
+    items:
+      - name: Photovoltaic systems
+        level: 80
+      - name: Renewable energy
+        level: 78
+      - name: Installation design
+        level: 75
 
   - icon: shield
-    size: half
     title: Cybersecurity
-    items: [Information security, Data protection, Vulnerability analysis, Secure networks]
+    items:
+      - name: Information security
+        level: 75
+      - name: Data protection
+        level: 72
+      - name: Vulnerability analysis
+        level: 70
+      - name: Secure networks
+        level: 68
 
   - icon: code
-    size: wide
-    title: Tools
-    items: [Arduino IDE, MATLAB, Adobe Dreamweaver, GitHub, Microsoft Office, Moodle]
+    title: Tools & software
+    items:
+      - name: Arduino IDE
+        level: 90
+        brand: arduino
+      - name: Microsoft Office
+        level: 90
+        brand: office
+      - name: Moodle
+        level: 85
+        brand: moodle
+      - name: Adobe Dreamweaver
+        level: 80
+        brand: dreamweaver
+      - name: GitHub
+        level: 75
+        brand: github
 
-  - icon: server
-    size: narrow
-    title: Hands-on trades
-    items: [Carpentry, Electrical wiring, General maintenance]
+  - icon: award
+    title: Management & teaching
+    items:
+      - name: Administrative management
+        level: 85
+      - name: Project management
+        level: 82
+      - name: Pedagogy
+        level: 80
+      - name: Digital marketing
+        level: 75
 
 languagesTitle: Languages
 languages:

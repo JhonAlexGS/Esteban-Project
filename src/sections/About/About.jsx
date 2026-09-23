@@ -7,7 +7,6 @@ import { Markdown } from '../../components/ui/Markdown'
 import { useLang } from '../../hooks/useLang'
 import { pickMarkdown } from '../../lib/content'
 import { scaleIn } from '../../lib/motion'
-import { publicUrl } from '../../lib/profile'
 
 // Contenido editable de esta sección: `content.es.md` / `content.en.md`.
 // La experiencia laboral vive en su propia sección: `src/sections/Experience/`.
@@ -20,35 +19,15 @@ const CONTENT = import.meta.glob('./content.*.md', {
 export default function About() {
   const lang = useLang()
   const { data, body } = useMemo(() => pickMarkdown(CONTENT, lang), [lang])
-  // Foto opcional del espacio de trabajo (campo `image` del Markdown).
-  const imagen = publicUrl(data.image)
 
   return (
     <Section id="about">
       <SectionHeading eyebrow={data.eyebrow} title={data.title} lead={data.lead} />
 
       <div className="mt-12 grid gap-10 lg:mt-16 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-        <div className="flex min-w-0 flex-col gap-8">
-          <Reveal className="max-w-2xl">
-            <Markdown>{body}</Markdown>
-          </Reveal>
-
-          {imagen ? (
-            <Reveal variants={scaleIn} delay={0.08}>
-              <figure className="nc-card group overflow-hidden p-1.5">
-                <img
-                  src={imagen}
-                  alt={data.imageAlt ?? ''}
-                  width={data.imageWidth}
-                  height={data.imageHeight}
-                  loading="lazy"
-                  decoding="async"
-                  className="aspect-video w-full rounded-xl object-cover transition-transform duration-500 ease-expo group-hover:scale-[1.02]"
-                />
-              </figure>
-            </Reveal>
-          ) : null}
-        </div>
+        <Reveal className="max-w-2xl">
+          <Markdown>{body}</Markdown>
+        </Reveal>
 
         {/* Pilares del perfil */}
         <div className="grid content-start gap-4 sm:grid-cols-2">

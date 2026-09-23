@@ -13,23 +13,24 @@ role: Mechatronics Engineer · MSc in Artificial Intelligence
 photoAlt: Portrait of Julio Esteban Jordan Losada
 
 # The headline animates word by word. `headlineAccent` gets the accent gradient.
-headline: "Technology doesn't replace talent:"
-headlineAccent: it amplifies it
+headline: Every question hides an idea
+headlineAccent: and every idea becomes a challenge
 
-# Highlighted metrics (3 at most so it doesn't break on mobile).
+# Highlighted metrics (4 at most). `label` is optional: leave it empty and
+# only the figure is shown.
 stats:
-  - value: 4 years
-    label: Of experience in engineering, systems, IT and teaching
+  - value: Mechatronics Eng.
+    label: CORHUILA, 2023
   - value: COPNIA
-    label: Licensed Mechatronics Engineer (professional card)
+    label: Active professional license
   - value: MSc AI
-    label: Master's in Artificial Intelligence · Sergio Arboleda, 2026
+    label: Sergio Arboleda, 2026
 
 scrollHint: Scroll to explore
 ---
 
-Robotics, automation and control, now powered by **artificial intelligence**.
-Four years implementing **AI solutions to optimize processes**, supporting
-**systems and networks**, building **websites** and backing **solar energy**
-installations, fluent in **Python**, **C/C++**, **MATLAB**, **Arduino** and
-**SolidWorks**.
+Robotics and control, now powered by **artificial intelligence**. Four years
+supporting **systems, networks and hardware**, building **corporate websites**,
+implementing **AI solutions to optimize processes** and backing **solar energy**
+installations. I code in **Python**, **C/C++**, **MATLAB** and **Arduino**, and
+design in CAD with **SolidWorks**.

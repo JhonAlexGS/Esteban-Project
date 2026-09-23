@@ -8,6 +8,7 @@ export const SECTION_IDS = [
   'experience',
   'projects',
   'skills',
+  'ai-tools',
   'education',
   'testimonials',
   'contact',
@@ -19,6 +20,7 @@ export const NAV_ITEMS = [
   { id: 'experience', labelKey: 'nav.experience' },
   { id: 'projects', labelKey: 'nav.projects' },
   { id: 'skills', labelKey: 'nav.skills' },
+  { id: 'ai-tools', labelKey: 'nav.aiTools' },
   { id: 'education', labelKey: 'nav.education' },
   { id: 'testimonials', labelKey: 'nav.testimonials' },
 ]

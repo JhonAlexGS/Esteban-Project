@@ -31,10 +31,13 @@ export function ExperienceTimeline({ jobs }) {
                 {job.period}
               </span>
             ) : null}
-            <h3 className="text-lg font-semibold tracking-tight text-ink">
+            {/* La empresa es lo primero que se busca al leer una trayectoria,
+                así que lleva el peso visual; el cargo va debajo como etiqueta,
+                con el mismo estilo que las tecnologías del pie. */}
+            <h3 className="text-lg font-semibold tracking-tight text-ink">{job.company}</h3>
+            <span className="mt-1 w-fit rounded-full border border-line bg-surface px-2.5 py-1 font-mono text-[0.6875rem] text-ink-subtle transition-colors duration-200 group-hover:border-line-accent group-hover:text-ink">
               {job.role}
-              <span className="text-ink-muted"> · {job.company}</span>
-            </h3>
+            </span>
             {job.location ? <p className="text-xs text-ink-subtle">{job.location}</p> : null}
           </div>
 

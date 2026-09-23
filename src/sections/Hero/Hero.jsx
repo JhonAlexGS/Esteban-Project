@@ -39,6 +39,11 @@ export default function Hero() {
 
   const parallax = prefersReducedMotion ? undefined : { opacity, scale, y }
 
+  // Con cuatro métricas la banda se reparte en dos filas en tablet y en cuatro
+  // columnas en escritorio; con tres, en tres columnas como hasta ahora.
+  const stats = data.stats ?? []
+  const statsCols = stats.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'sm:grid-cols-3'
+
   const headlineWords = String(data.headline ?? '').split(' ')
   const accentWords = String(data.headlineAccent ?? '').split(' ')
 
@@ -188,18 +193,21 @@ export default function Hero() {
           {/* Métricas: banda a todo el ancho, por debajo del texto y del retrato */}
           <motion.dl
             variants={item}
-            className="grid w-full grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-3"
+            className={`grid w-full grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line ${statsCols}`}
           >
-            {(data.stats ?? []).map((stat) => (
+            {stats.map((stat) => (
               <div
-                key={stat.label}
+                key={stat.value}
                 className="flex flex-col gap-1 bg-canvas-base/60 p-5 backdrop-blur-sm transition-colors duration-200 hover:bg-surface-hover"
               >
-                <dt className="sr-only">{stat.label}</dt>
+                {/* El pie es opcional: sin él, la cifra queda sola. */}
+                {stat.label ? <dt className="sr-only">{stat.label}</dt> : null}
                 <dd className="font-mono text-2xl font-semibold tracking-tight text-ink">
                   {stat.value}
                 </dd>
-                <p className="text-xs leading-relaxed text-ink-muted">{stat.label}</p>
+                {stat.label ? (
+                  <p className="text-xs leading-relaxed text-ink-muted">{stat.label}</p>
+                ) : null}
               </div>
             ))}
           </motion.dl>

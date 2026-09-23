@@ -1,14 +1,18 @@
 # ---------------------------------------------------------------------------
 # STACK TÉCNICO — español.
-# Cada bloque de `groups` es una tarjeta. Añade o quita tecnologías dentro de
-# `items` sin tocar el código.
-# `icon` acepta: terminal, layers, devops, cloud, server, database, tool, cpu,
-# shield, sun, code, radio, globe, book.
 #
-# `size` controla el ancho de la tarjeta en escritorio (rejilla de 6 columnas):
-#   narrow = 2 columnas · half = 3 columnas · wide = 4 columnas
-# Procura que los tamaños de cada fila sumen 6, así no quedan huecos.
-# El reparto actual es: 2+2+2 · 3+3 · 3+3 · 4+2
+# Cada bloque de `groups` es una tarjeta con su lista de habilidades y el nivel
+# de dominio de cada una (la barra de progreso).
+#
+# Campos de cada habilidad:
+#   name  → nombre visible
+#   level → dominio de 0 a 100 (es lo que llena la barra)
+#   brand → logo de la tecnología (opcional). Los nombres disponibles están en
+#           `src/components/ui/brands.jsx`; si una habilidad no es un producto
+#           concreto (por ejemplo «Control industrial»), se deja sin `brand`.
+#
+# `icon` es el ícono de la tarjeta y acepta: terminal, layers, devops, cloud,
+# server, database, tool, cpu, shield, sun, code, radio, globe, book, award.
 # ---------------------------------------------------------------------------
 
 eyebrow: Stack técnico
@@ -19,49 +23,128 @@ lead: >-
 
 groups:
   - icon: terminal
-    size: narrow
-    title: Lenguajes de programación
-    items: [Python, JavaScript, C/C++, MATLAB, Arduino, HTML/CSS]
+    title: Programación
+    items:
+      - name: Python
+        level: 80
+        brand: python
+      - name: Arduino
+        level: 85
+        brand: arduino
+      - name: C/C++
+        level: 78
+        brand: cpp
+      - name: JavaScript
+        level: 75
+        brand: javascript
+      - name: MATLAB
+        level: 75
+        brand: matlab
+      - name: HTML/CSS
+        level: 78
+        brand: html
 
   - icon: layers
-    size: narrow
-    title: Software CAD
-    items: [SolidWorks, Solid Edge, FreeDFD]
-
-  - icon: cpu
-    size: narrow
-    title: Herramientas de IA
-    items: [Claude, ChatGPT, Gemini, Midjourney]
-
-  - icon: devops
-    size: half
-    title: Automatización
-    items: [PLC, Sistemas SCADA, Control industrial, Instrumentación]
+    title: Diseño CAD
+    items:
+      - name: SolidWorks
+        level: 75
+        brand: solidworks
+      - name: Solid Edge
+        level: 70
+        brand: solidedge
+      - name: FreeDFD
+        level: 75
+        brand: freedfd
 
   - icon: tool
-    size: half
     title: Robótica
-    items: [Robótica antropomórfica, Sensores y actuadores, Control de movimiento, Diseño mecánico]
+    items:
+      - name: Sensores y actuadores
+        level: 88
+      - name: Robótica antropomórfica
+        level: 85
+      - name: Diseño mecánico
+        level: 80
+      - name: Control de movimiento
+        level: 70
+
+  - icon: devops
+    title: Automatización
+    items:
+      - name: PLC
+        level: 85
+      - name: Control industrial
+        level: 82
+      - name: Instrumentación
+        level: 80
+      - name: Sistemas SCADA
+        level: 78
+
+  - icon: cpu
+    title: Inteligencia artificial
+    items:
+      - name: Procesamiento de datos
+        level: 78
+      - name: Machine learning
+        level: 75
+      - name: Visión artificial
+        level: 72
+      - name: Automatización con IA
+        level: 70
 
   - icon: sun
-    size: half
     title: Energía solar
-    items: [Sistemas fotovoltaicos, Diseño de instalaciones, Energías renovables]
+    items:
+      - name: Sistemas fotovoltaicos
+        level: 80
+      - name: Energías renovables
+        level: 78
+      - name: Diseño de instalaciones
+        level: 75
 
   - icon: shield
-    size: half
     title: Ciberseguridad
-    items: [Seguridad informática, Protección de datos, Análisis de vulnerabilidades, Redes seguras]
+    items:
+      - name: Seguridad informática
+        level: 75
+      - name: Protección de datos
+        level: 72
+      - name: Análisis de vulnerabilidades
+        level: 70
+      - name: Redes seguras
+        level: 68
 
   - icon: code
-    size: wide
-    title: Herramientas
-    items: [Arduino IDE, MATLAB, Adobe Dreamweaver, GitHub, Microsoft Office, Moodle]
+    title: Herramientas y software
+    items:
+      - name: Arduino IDE
+        level: 90
+        brand: arduino
+      - name: Microsoft Office
+        level: 90
+        brand: office
+      - name: Moodle
+        level: 85
+        brand: moodle
+      - name: Adobe Dreamweaver
+        level: 80
+        brand: dreamweaver
+      - name: GitHub
+        level: 75
+        brand: github
 
-  - icon: server
-    size: narrow
-    title: Oficios prácticos
-    items: [Carpintería, Redes eléctricas, Mantenimiento general]
+  - icon: award
+    title: Gestión y docencia
+    items:
+      - name: Gerencia administrativa
+        level: 85
+      - name: Gestión de proyectos
+        level: 82
+      - name: Pedagogía
+        level: 80
+      - name: Marketing digital
+        level: 75
 
 languagesTitle: Idiomas
 languages:

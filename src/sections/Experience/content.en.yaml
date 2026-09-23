@@ -14,15 +14,14 @@
 # ---------------------------------------------------------------------------
 
 eyebrow: Experience
-title: Four years across engineering, IT and the classroom
-lead: >-
-  From teaching robotics and programming logic to implementing artificial
-  intelligence, networks and solar energy inside a company.
+title: Professional background
+# Optional lead: when empty, the section goes straight from title to timeline.
+lead: ''
 
 items:
   - company: Grupo Empresarial Colombia GED SAS
     role: Mechatronics Engineer
-    period: Oct 2023 – Aug 2026
+    period: 4 Oct 2023 – 4 Aug 2026
     highlights:
       - Implemented artificial intelligence solutions to optimize processes.
       - Installed and provided technical support for photovoltaic solar energy systems.
@@ -35,7 +34,7 @@ items:
 
   - company: AXCOR
     role: IT & Web Development Lead
-    period: Dec 2022 – Oct 2023
+    period: 8 Dec 2022 – 4 Oct 2023
     highlights:
       - Coordinated teams and supervised operations.
       - Built and maintained the corporate website.
@@ -47,7 +46,7 @@ items:
 
   - company: Colegio Enrique Olaya Herrera
     role: Educational Robotics Teacher (Internship)
-    period: Aug 2022 – Dec 2022
+    period: 1 Aug 2022 – 8 Dec 2022
     highlights:
       - Taught in the educational robotics area.
       - Designed and delivered the C++ programming logic course.

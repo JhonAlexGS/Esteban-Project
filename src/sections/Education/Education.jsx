@@ -117,6 +117,12 @@ export default function Education() {
                 <p className="mt-1.5 text-sm leading-relaxed text-ink-muted">
                   {certification.name}
                 </p>
+                {/* Intensidad horaria: opcional, solo la tienen algunos cursos. */}
+                {certification.hours ? (
+                  <p className="mt-1.5 font-mono text-[0.6875rem] text-ink-subtle">
+                    {certification.hours}
+                  </p>
+                ) : null}
               </Reveal>
               )
             })}

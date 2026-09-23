@@ -14,15 +14,15 @@
 # ---------------------------------------------------------------------------
 
 eyebrow: Experiencia
-title: Cuatro años entre la ingeniería, la TI y el aula
-lead: >-
-  De enseñar robótica y lógica de programación a implementar inteligencia
-  artificial, redes y energía solar dentro de una empresa.
+title: Trayectoria profesional
+# Entradilla opcional: vacía, la sección pasa directo del titular a la línea
+# de tiempo.
+lead: ''
 
 items:
   - company: Grupo Empresarial Colombia GED SAS
     role: Ingeniero Mecatrónico
-    period: Oct 2023 – Ago 2026
+    period: 4 oct 2023 – 4 ago 2026
     highlights:
       - Implementación de soluciones de inteligencia artificial para la optimización de procesos.
       - Instalación y soporte técnico de sistemas de energía solar fotovoltaica.
@@ -35,7 +35,7 @@ items:
 
   - company: AXCOR
     role: Encargado de TI y Desarrollo Web
-    period: Dic 2022 – Oct 2023
+    period: 8 dic 2022 – 4 oct 2023
     highlights:
       - Coordinación de equipos y supervisión de operaciones.
       - Creación y mantenimiento de la página web corporativa.
@@ -47,7 +47,7 @@ items:
 
   - company: Colegio Enrique Olaya Herrera
     role: Docente Practicante en Robótica Educativa
-    period: Ago 2022 – Dic 2022
+    period: 1 ago 2022 – 8 dic 2022
     highlights:
       - Enseñanza en el área de robótica educativa.
       - Desarrollo del curso de lógica de programación en C++.
