@@ -41,6 +41,11 @@ export function SpotlightCard({ className = '', lift = true, children, ...rest }
         animate={{ opacity: hovered ? 1 : 0 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
       />
+
+      {/* Borde eléctrico: la línea de acento vibra mientras el cursor está
+          encima. El filtro solo se aplica en ese momento —es caro— y con
+          movimiento reducido la capa no se dibuja (ver `src/index.css`). */}
+      <span aria-hidden="true" className="nc-electric" data-active={hovered ? 'true' : 'false'} />
       {children}
     </motion.div>
   )
