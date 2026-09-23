@@ -462,6 +462,18 @@
     -webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
   }
 
+  /* Radio del cilindro del carrusel de proyectos: en móvil las tarjetas se
+     acercan para que la del frente siga siendo la protagonista. */
+  .nc-carousel-3d {
+    --radio-carrusel: 260px;
+  }
+
+  @media (min-width: 640px) {
+    .nc-carousel-3d {
+      --radio-carrusel: 460px;
+    }
+  }
+
   /* Línea divisoria degradada entre secciones. */
   .nc-divider {
     height: 1px;

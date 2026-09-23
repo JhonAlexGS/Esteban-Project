@@ -1,69 +1,125 @@
 # ---------------------------------------------------------------------------
-# FEATURED PROJECTS — English.
-# `items` is the list of cards. To add a project, copy a whole block keeping
-# the indentation.
+# PROJECTS — English.
+#
+# There is ONE CARD PER PROJECT in the carousel. The front shows the project
+# name and its information; clicking "View images" flips the card to reveal its
+# images, and clicking one of them opens it enlarged in a popup window.
 #
 # Fields for each project:
-#   title    → project name
-#   kicker   → short category shown on top
-#   period   → dates
-#   summary  → description (supports Markdown **bold**)
-#   metrics  → highlighted figures (optional, 2 at most)
-#   tags     → technologies
-#   icon     → cpu, radio, code, database, cloud, shield, server, terminal,
-#              tool, sun, book...
-#   size     → hero | tall | wide | full  (controls the size in the grid)
-#   links    → list of links, each with `label` and `url`.
-#              Add several (repo, demo, site…) or none: with an empty list
-#              the card simply shows no buttons.
+#   title   → project name
+#   kicker  → short category shown on top
+#   period  → dates
+#   summary → the information shown on the front face
+#   tags    → technologies (the first four are shown)
+#   images  → its images; a project may hold several mini-projects, and each
+#             one is an image with its name:
+#               file → file inside `public/`
+#               name → name of the image or mini-project
+#               note → explanation shown when enlarged (optional)
 # ---------------------------------------------------------------------------
 
 eyebrow: Featured projects
-title: What I've worked on
-# Optional lead: when empty, the section goes straight from title to cards.
+title: What I have worked on
 lead: ''
 
+# Note shown under the carousel.
+flipHint: Flip the card to see the images; click them to enlarge.
+
 items:
-  - id: multisort-ai
-    title: MultiSort-AI-APP
+  - title: MultiSort-AI-APP
     kicker: Master's thesis · Applied AI at GED
     period: MSc in AI · 2026
-    icon: cpu
-    size: hero
-    links: []
     summary: >-
-      An **artificial intelligence** application built for **Grupo Empresarial
-      Colombia GED** as the thesis project of the **Master's in Artificial
-      Intelligence**. It organizes large volumes of **images** through
-      **filters and segmentation**, and also supports **image editing and
-      generation** within the same workflow. It is an internal application: it
-      runs locally and belongs to the company, so it has no public
-      repository.
-    tags: [Python, Computer vision, Image segmentation, Generative AI, Data processing]
+      An artificial intelligence application built for Grupo Empresarial
+      Colombia GED as a thesis project: it classifies and organizes large
+      volumes of images with filters and segmentation, and adds an image
+      generation and editing mode. It is internal software and runs locally.
+    tags: [Python, Computer vision, Segmentation, Generative AI]
+    images:
+      - file: proyectos/multisort-clasificacion.webp
+        name: Image classification and sorting
+        note: >-
+          Main screen: you pick the input folder, the formats to include and
+          the output folder. Classification can be automatic or by category.
+      - file: proyectos/multisort-generacion.webp
+        name: Image generation
+        note: >-
+          The app's second mode: text-to-image generation, transformations and
+          upscaling.
 
-  - id: sitio-ged
-    title: GED and AXCOR corporate websites
+  - title: Master's in AI projects
+    kicker: AI and optimization · Academic projects
+    period: MSc in AI · 2024 – 2026
+    summary: >-
+      Two exercises from the master's where the theory had to actually run: a
+      vacuum that looks for the best route with the energy it has left, and a
+      car detector working live on the camera feed.
+    tags: [Python, Search and optimization, Computer vision, YOLOv5]
+    images:
+      - file: proyectos/aspiradora.webp
+        name: Smart vacuum cleaner
+        note: >-
+          A vacuum that travels a grid environment through nodes, spots the
+          cells it still has to visit and collects the dirt along the way.
+          Energy is limited and drains with every move and every pickup, so the
+          challenge is optimizing the route to cover as much area as possible
+          before running out.
+      - file: proyectos/deteccion-carros.webp
+        name: Car detection
+        note: >-
+          Real-time object detection over the camera feed: the model draws a
+          box around each car with its confidence score, processing frame by
+          frame.
+
+  - title: Corporate websites
     kicker: Web development · GED and AXCOR
     period: Dec 2022 – Aug 2026
-    icon: code
-    size: tall
-    links: []
     summary: >-
-      **Development and maintenance** of both companies' corporate websites,
-      alongside support for **social media** and the **digital marketing**
-      strategies behind their positioning.
+      Development and maintenance of the corporate websites of both companies
+      I worked for, alongside support for social media and the digital
+      marketing strategies behind their positioning.
     tags: [HTML/CSS, JavaScript, Adobe Dreamweaver, Digital marketing]
+    images:
+      - file: proyectos/web-ged.webp
+        name: GED website
+        note: >-
+          Home page of Grupo Empresarial Colombia GED, covering its renewable
+          energy, eco-friendly packaging, environmental engineering and
+          advertising lines.
+      - file: proyectos/web-axcor-inicio.webp
+        name: AXCOR website
+        note: AXCOR's home page.
+      - file: proyectos/web-axcor-garantias.webp
+        name: AXCOR warranty system
+        note: >-
+          Warranty tracking board: each order with its customer, item, validity
+          and current status.
 
-  - id: robotica-educativa
-    title: Teaching educational robotics
+  - title: Teaching educational robotics
     kicker: Teaching · Colegio Enrique Olaya Herrera
     period: Aug 2022 – Dec 2022
-    icon: tool
-    size: full
-    links: []
     summary: >-
-      A **C++ programming logic** course and hands-on training on
-      **microcontrollers**. With the students we took part in a **line-follower
-      contest** and worked through the systems of a **submarine**: radar, motor
-      and lights.
-    tags: [Robotics, C++, Arduino, Microcontrollers, Line follower]
+      A C++ programming logic course and hands-on training on
+      microcontrollers. With the students we took part in a line-follower
+      contest and worked through the systems of a submarine: radar, motor and
+      lights.
+    tags: [Robotics, C++, Arduino, Microcontrollers]
+    images:
+      - file: proyectos/colegio-seguidor.webp
+        name: Line follower
+        note: The contest robot, built and programmed with the students.
+      - file: proyectos/colegio-submarino.webp
+        name: Submarine
+        note: Submarine model with its radar, motor and lighting systems.
+      - file: proyectos/colegio-esquema-submarino.webp
+        name: Submarine system diagram
+        note: Diagram of how each of the submarine's systems works.
+      - file: proyectos/colegio-carrito.webp
+        name: Remote-controlled car
+        note: A remote-controlled vehicle built in class.
+      - file: proyectos/colegio-lego.webp
+        name: Lego architecture
+        note: A construction and mechanical design exercise with Lego bricks.
+      - file: proyectos/colegio-ultrasonido.webp
+        name: Ultrasonic sensor
+        note: Distance measurement practice with an ultrasonic sensor and Arduino.

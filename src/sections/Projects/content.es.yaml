@@ -1,71 +1,127 @@
 # ---------------------------------------------------------------------------
-# PROYECTOS DESTACADOS — español.
-# `items` es la lista de tarjetas. Para añadir un proyecto, copia un bloque
-# completo respetando la indentación.
+# PROYECTOS — español.
+#
+# Hay UNA TARJETA POR PROYECTO en el carrusel. Por delante se lee el nombre del
+# proyecto y su información; al pulsar «Ver imágenes» la tarjeta gira y enseña
+# sus imágenes, y al pulsar una de ellas se abre ampliada en una ventana
+# emergente.
 #
 # Campos de cada proyecto:
-#   title    → nombre del proyecto
-#   kicker   → categoría corta que se muestra arriba
-#   period   → fechas
-#   summary  → descripción (admite **negritas** de Markdown)
-#   metrics  → cifras destacadas (opcional, máximo 2)
-#   tags     → tecnologías
-#   icon     → cpu, radio, code, database, cloud, shield, server, terminal,
-#              tool, sun, book...
-#   size     → hero | tall | wide | full  (controla el tamaño en la grilla)
-#   links    → lista de enlaces, cada uno con `label` y `url`.
-#              Puedes poner varios (repo, demo, sitio…) o ninguno:
-#              si la lista está vacía, la tarjeta simplemente no muestra
-#              botones. El `label` es el texto visible, cámbialo a tu gusto.
+#   title   → nombre del proyecto
+#   kicker  → categoría corta que aparece arriba
+#   period  → fechas
+#   summary → la información que se lee en la cara frontal
+#   tags    → tecnologías (se muestran las cuatro primeras)
+#   images  → sus imágenes; un proyecto puede tener varios miniproyectos, y
+#             cada uno es una imagen con su nombre:
+#               file → archivo dentro de `public/`
+#               name → nombre de la imagen o del miniproyecto
+#               note → explicación que se lee al ampliarla (opcional)
 # ---------------------------------------------------------------------------
 
 eyebrow: Proyectos destacados
 title: En qué he trabajado
-# Entradilla opcional: vacía, la sección pasa directo del titular a las
-# tarjetas.
 lead: ''
 
+# Aviso que aparece bajo el carrusel.
+flipHint: Gira la tarjeta para ver las imágenes; púlsalas para ampliarlas.
+
 items:
-  - id: multisort-ai
-    title: MultiSort-AI-APP
+  - title: MultiSort-AI-APP
     kicker: Tesis de maestría · IA aplicada en GED
     period: Maestría en IA · 2026
-    icon: cpu
-    size: hero
-    links: []
     summary: >-
-      Aplicación de **inteligencia artificial** desarrollada para **Grupo
-      Empresarial Colombia GED** como proyecto de tesis de la **Maestría en
-      Inteligencia Artificial**. Organiza grandes volúmenes de **imágenes**
-      mediante **filtros y segmentación**, y apoya además la **edición y
-      generación de imágenes** dentro del mismo flujo de trabajo. Es una
-      aplicación de uso interno: corre en local y pertenece a la empresa, así
-      que no tiene repositorio público.
-    tags: [Python, Visión artificial, Segmentación de imágenes, IA generativa, Procesamiento de datos]
+      Aplicación de inteligencia artificial hecha para Grupo Empresarial
+      Colombia GED como proyecto de tesis: clasifica y organiza grandes
+      volúmenes de imágenes con filtros y segmentación, y suma un modo de
+      generación y edición. Es de uso interno y corre en local.
+    tags: [Python, Visión artificial, Segmentación, IA generativa]
+    images:
+      - file: proyectos/multisort-clasificacion.webp
+        name: Clasificación y organización de imágenes
+        note: >-
+          Pantalla principal: se elige la carpeta de entrada, los formatos que
+          se tienen en cuenta y la carpeta de salida. La clasificación puede
+          ser automática o por categorías.
+      - file: proyectos/multisort-generacion.webp
+        name: Generación de imágenes
+        note: >-
+          El segundo modo de la aplicación: generación por texto,
+          transformaciones y escalado de imágenes.
 
-  - id: sitio-ged
-    title: Páginas web corporativas de GED y AXCOR
+  - title: Proyectos de la Maestría en IA
+    kicker: IA y optimización · Proyectos académicos
+    period: Maestría en IA · 2024 – 2026
+    summary: >-
+      Dos ejercicios de la maestría en los que la teoría se puso a funcionar:
+      una aspiradora que busca la mejor ruta con la energía que le queda, y un
+      detector de carros que trabaja en vivo sobre el video de la cámara.
+    tags: [Python, Búsqueda y optimización, Visión artificial, YOLOv5]
+    images:
+      - file: proyectos/aspiradora.webp
+        name: Aspiradora inteligente
+        note: >-
+          Aspiradora que recorre un entorno en cuadrícula mediante nodos,
+          identifica las casillas que faltan y recoge la suciedad del camino.
+          La energía es limitada y se gasta con cada movimiento y cada
+          recolección, así que el reto está en optimizar el recorrido para
+          cubrir la mayor área posible antes de quedarse sin carga.
+      - file: proyectos/deteccion-carros.webp
+        name: Detección de carros
+        note: >-
+          Detección de objetos en tiempo real sobre el video de la cámara: el
+          modelo marca cada carro con su recuadro y su nivel de confianza,
+          procesando cuadro a cuadro.
+
+  - title: Páginas web corporativas
     kicker: Desarrollo web · GED y AXCOR
     period: Dic 2022 – Ago 2026
-    icon: code
-    size: tall
-    links: []
     summary: >-
-      **Desarrollo y mantenimiento** de las páginas corporativas de las dos
-      empresas, acompañados del apoyo en **redes sociales** y de las estrategias
-      de **marketing digital** para su posicionamiento.
+      Desarrollo y mantenimiento de las páginas corporativas de las dos
+      empresas donde trabajé, acompañados del apoyo en redes sociales y de las
+      estrategias de marketing digital para su posicionamiento.
     tags: [HTML/CSS, JavaScript, Adobe Dreamweaver, Marketing digital]
+    images:
+      - file: proyectos/web-ged.webp
+        name: Página de GED
+        note: >-
+          Portada del sitio de Grupo Empresarial Colombia GED, con sus líneas
+          de energía renovable, empaques ecológicos, ingeniería ambiental y
+          publicidad.
+      - file: proyectos/web-axcor-inicio.webp
+        name: Página de AXCOR
+        note: Portada del sitio de AXCOR.
+      - file: proyectos/web-axcor-garantias.webp
+        name: Sistema de garantías de AXCOR
+        note: >-
+          Tablero de seguimiento de garantías: cada pedido con su cliente, su
+          artículo, su vigencia y el estado en que va.
 
-  - id: robotica-educativa
-    title: Docencia en robótica educativa
+  - title: Docencia en robótica educativa
     kicker: Docencia · Colegio Enrique Olaya Herrera
     period: Ago 2022 – Dic 2022
-    icon: tool
-    size: full
-    links: []
     summary: >-
-      Curso de **lógica de programación en C++** y formación práctica en
-      **microcontroladores**. Con los estudiantes participamos en un **concurso
-      de seguidores de línea** y trabajamos el funcionamiento de los sistemas de
-      un **submarino**: radar, motor y luces.
-    tags: [Robótica, C++, Arduino, Microcontroladores, Seguidor de línea]
+      Curso de lógica de programación en C++ y formación práctica en
+      microcontroladores. Con los estudiantes participamos en un concurso de
+      seguidores de línea y trabajamos el funcionamiento de los sistemas de un
+      submarino: radar, motor y luces.
+    tags: [Robótica, C++, Arduino, Microcontroladores]
+    images:
+      - file: proyectos/colegio-seguidor.webp
+        name: Seguidor de línea
+        note: Robot del concurso, construido y programado con los estudiantes.
+      - file: proyectos/colegio-submarino.webp
+        name: Submarino
+        note: Maqueta del submarino con sus sistemas de radar, motor y luces.
+      - file: proyectos/colegio-esquema-submarino.webp
+        name: Esquema del sistema del submarino
+        note: Diagrama del funcionamiento de cada sistema del submarino.
+      - file: proyectos/colegio-carrito.webp
+        name: Carrito con control
+        note: Vehículo controlado a distancia, hecho en clase.
+      - file: proyectos/colegio-lego.webp
+        name: Arquitectura en Lego
+        note: Ejercicio de construcción y diseño mecánico con piezas de Lego.
+      - file: proyectos/colegio-ultrasonido.webp
+        name: Sensor de ultrasonido
+        note: Práctica de medición de distancia con sensor ultrasónico y Arduino.

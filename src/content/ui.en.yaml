@@ -27,6 +27,8 @@ actions:
   close: Close
   prev: Previous
   next: Next
+  back: Back
+  viewImages: View images ({{count}})
   readFull: Read in full
   readFullOf: Read the full testimonial from {{name}}
 

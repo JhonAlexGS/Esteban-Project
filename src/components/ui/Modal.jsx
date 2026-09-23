@@ -14,8 +14,11 @@ const FOCUSABLES =
  * Se encarga de lo que se suele olvidar en un popup hecho a mano: cerrar con
  * Escape, atrapar el foco dentro mientras está abierto, devolverlo al elemento
  * que lo abrió al cerrarse y bloquear el scroll del fondo.
+ *
+ * `size` acepta `default` (texto, ancho de lectura) o `wide`, pensado para
+ * mostrar imágenes ampliadas.
  */
-export function Modal({ open, onClose, titleId, children }) {
+export function Modal({ open, onClose, titleId, size = 'default', children }) {
   const { t } = useTranslation()
   const panel = useRef(null)
   const focoPrevio = useRef(null)
@@ -98,7 +101,9 @@ export function Modal({ open, onClose, titleId, children }) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.3, ease: EASE_EXPO }}
-            className="nc-card nc-scroll-area relative max-h-[88vh] w-full max-w-2xl overflow-y-auto rounded-b-none sm:rounded-2xl"
+            className={`nc-card nc-scroll-area relative max-h-[92vh] w-full overflow-y-auto rounded-b-none sm:rounded-2xl ${
+              size === 'wide' ? 'max-w-5xl' : 'max-h-[88vh] max-w-2xl'
+            }`}
           >
             <button
               type="button"

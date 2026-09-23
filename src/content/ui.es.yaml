@@ -27,6 +27,8 @@ actions:
   close: Cerrar
   prev: Anterior
   next: Siguiente
+  back: Volver
+  viewImages: Ver imágenes ({{count}})
   readFull: Leer completo
   readFullOf: Leer el testimonio completo de {{name}}
 
