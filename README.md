@@ -1,3 +1,5 @@
+
+
 # Portafolio de Julio Esteban Jordan Losada
 
 Ingeniero Mecatrónico · MSc en Inteligencia Artificial.
