@@ -1,4 +1,4 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{c as t,d as n,l as r,u as i}from"./motion-D4psEU6N.js";import{rt as a,st as o}from"./vendor-CGe-Pfak.js";import{d as s,i as c,l,m as u,n as d,s as f}from"./index-sGxW7g-M.js";import{n as p,r as m,t as h}from"./Section-BicXDDXv.js";import{t as g}from"./SpotlightCard-8Qw2FDrF.js";var _=`# ---------------------------------------------------------------------------\r
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{c as t,d as n,l as r,u as i}from"./motion-D4psEU6N.js";import{rt as a,st as o}from"./vendor-CGe-Pfak.js";import{d as s,i as c,l,m as u,n as d,s as f}from"./index-Bj8eHohS.js";import{n as p,r as m,t as h}from"./Section-CyqVXPDk.js";import{t as g}from"./SpotlightCard-C9IMiyap.js";var _=`# ---------------------------------------------------------------------------\r
 # REFERENCES & TESTIMONIALS — English.\r
 #\r
 # Each person is shown in one of two ways:\r

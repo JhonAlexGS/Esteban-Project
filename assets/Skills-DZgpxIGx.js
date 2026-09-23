@@ -1,4 +1,4 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{c as t,d as n,t as r,u as i}from"./motion-D4psEU6N.js";import{_ as a,a as o,c as s,d as c,f as l,g as u,h as d,i as f,l as p,m,n as h,o as g,p as _,r as v,s as y,t as b,u as x,v as S}from"./vendor-CGe-Pfak.js";import{d as C,l as w,m as T,n as E,s as D,u as O}from"./index-sGxW7g-M.js";import{n as k,r as A,t as j}from"./Section-BicXDDXv.js";import{t as M}from"./SpotlightCard-8Qw2FDrF.js";var N=`# ---------------------------------------------------------------------------\r
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{d as t,u as n}from"./motion-D4psEU6N.js";import{l as r,m as i,n as a,s as o,u as s}from"./index-Bj8eHohS.js";import{n as c,r as l,t as u}from"./Section-CyqVXPDk.js";import{n as d,t as f}from"./brands-C0HzMJ6X.js";import{t as p}from"./SpotlightCard-C9IMiyap.js";var m=`# ---------------------------------------------------------------------------\r
 # TECH STACK — English.\r
 #\r
 # Each block in \`groups\` is a card with its list of skills and the proficiency\r
@@ -25,28 +25,6 @@ title: A tool for every idea\r
 lead: ''\r
 \r
 groups:\r
-  - icon: terminal\r
-    title: Programming\r
-    items:\r
-      - name: Python\r
-        level: 65\r
-        brand: python\r
-      - name: Arduino\r
-        level: 70\r
-        brand: arduino\r
-      - name: C/C++\r
-        level: 62\r
-        brand: cpp\r
-      - name: JavaScript\r
-        level: 58\r
-        brand: javascript\r
-      - name: MATLAB\r
-        level: 58\r
-        brand: matlab\r
-      - name: HTML/CSS\r
-        level: 62\r
-        brand: html\r
-\r
   - icon: layers\r
     title: CAD design\r
     items:\r
@@ -59,22 +37,6 @@ groups:\r
       - name: FreeDFD\r
         level: 58\r
         brand: freedfd\r
-\r
-  - icon: tool\r
-    title: Robotics\r
-    items:\r
-      - name: Sensors & actuators\r
-        level: 72\r
-        icon: radio\r
-      - name: Anthropomorphic robotics\r
-        level: 70\r
-        icon: tool\r
-      - name: Mechanical design\r
-        level: 65\r
-        icon: layers\r
-      - name: Motion control\r
-        level: 52\r
-        icon: activity\r
 \r
   - icon: devops\r
     title: Automation\r
@@ -197,22 +159,6 @@ groups:\r
         brand: zoom\r
         url: https://zoom.us\r
 \r
-  - icon: box\r
-    title: Hands-on trades\r
-    items:\r
-      - name: Computer assembly & maintenance\r
-        level: 70\r
-        icon: monitor\r
-      - name: General maintenance\r
-        level: 62\r
-        icon: tool\r
-      - name: Carpentry\r
-        level: 58\r
-        icon: box\r
-      - name: Electrical wiring\r
-        level: 52\r
-        icon: zap\r
-\r
   - icon: award\r
     title: Management & teaching\r
     items:\r
@@ -233,7 +179,7 @@ languagesTitle: Languages\r
 languages:\r
   - name: Spanish\r
     level: Native\r
-`,P=`# ---------------------------------------------------------------------------\r
+`,h=`# ---------------------------------------------------------------------------\r
 # STACK TÉCNICO — español.\r
 #\r
 # Cada bloque de \`groups\` es una tarjeta con su lista de habilidades y el nivel\r
@@ -261,28 +207,6 @@ title: Una herramienta para cada idea\r
 lead: ''\r
 \r
 groups:\r
-  - icon: terminal\r
-    title: Programación\r
-    items:\r
-      - name: Python\r
-        level: 65\r
-        brand: python\r
-      - name: Arduino\r
-        level: 70\r
-        brand: arduino\r
-      - name: C/C++\r
-        level: 62\r
-        brand: cpp\r
-      - name: JavaScript\r
-        level: 58\r
-        brand: javascript\r
-      - name: MATLAB\r
-        level: 58\r
-        brand: matlab\r
-      - name: HTML/CSS\r
-        level: 62\r
-        brand: html\r
-\r
   - icon: layers\r
     title: Diseño CAD\r
     items:\r
@@ -295,22 +219,6 @@ groups:\r
       - name: FreeDFD\r
         level: 58\r
         brand: freedfd\r
-\r
-  - icon: tool\r
-    title: Robótica\r
-    items:\r
-      - name: Sensores y actuadores\r
-        level: 72\r
-        icon: radio\r
-      - name: Robótica antropomórfica\r
-        level: 70\r
-        icon: tool\r
-      - name: Diseño mecánico\r
-        level: 65\r
-        icon: layers\r
-      - name: Control de movimiento\r
-        level: 52\r
-        icon: activity\r
 \r
   - icon: devops\r
     title: Automatización\r
@@ -433,22 +341,6 @@ groups:\r
         brand: zoom\r
         url: https://zoom.us\r
 \r
-  - icon: box\r
-    title: Oficios prácticos\r
-    items:\r
-      - name: Mantenimiento y armado de computadores\r
-        level: 70\r
-        icon: monitor\r
-      - name: Mantenimiento general\r
-        level: 62\r
-        icon: tool\r
-      - name: Carpintería\r
-        level: 58\r
-        icon: box\r
-      - name: Redes eléctricas\r
-        level: 52\r
-        icon: zap\r
-\r
   - icon: award\r
     title: Gestión y docencia\r
     items:\r
@@ -469,4 +361,4 @@ languagesTitle: Idiomas\r
 languages:\r
   - name: Español\r
     level: Nativo\r
-`,F=e(n(),1),I=i();function L({level:e,label:n,showValue:i=!0}){let a=r(),o=Math.max(0,Math.min(100,Number(e)||0));return(0,I.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,I.jsx)(`div`,{role:`progressbar`,"aria-valuenow":o,"aria-valuemin":0,"aria-valuemax":100,"aria-label":n,className:`h-1.5 w-full overflow-hidden rounded-full bg-line`,children:(0,I.jsx)(t.span,{initial:!a&&{width:0},whileInView:{width:`${o}%`},viewport:{once:!0,amount:.4},transition:{duration:.9,ease:C},className:`block h-full rounded-full bg-gradient-to-r from-accent to-accent-bright`,style:a?{width:`${o}%`}:void 0})}),i?(0,I.jsxs)(`span`,{className:`w-9 shrink-0 text-right font-mono text-[0.6875rem] text-ink-subtle`,children:[o,`%`]}):null]})}var R={python:{Icon:d,color:`#3776AB`},c:{Icon:v,color:`#5C6BC0`},cpp:{Icon:o,color:`#00599C`},javascript:{Icon:c,color:`#E6B800`},html:{Icon:x,color:`#E34F26`},arduino:{Icon:h,color:`#00979D`},github:{Icon:y,color:null},linux:{Icon:l,color:null},raspberry:{Icon:u,color:`#C51A4A`},claude:{Icon:f,color:`#D97757`},anthropic:{Icon:b,color:null},gemini:{Icon:s,color:`#4285F4`},perplexity:{Icon:m,color:`#20808D`},chatgpt:{monogram:`AI`,color:`#10A37F`},midjourney:{monogram:`MJ`,color:`#8B7BD8`},elevenlabs:{Icon:g,color:null},seedance:{monogram:`SD`,color:`#3C8CFF`},matlab:{monogram:`M`,color:`#E16737`},solidworks:{monogram:`SW`,color:`#E1181F`},solidedge:{Icon:a,color:`#00A5A5`},freedfd:{monogram:`DFD`,color:`#6B70A8`},dreamweaver:{monogram:`Dw`,color:`#37C177`},photoshop:{monogram:`Ps`,color:`#31A8FF`},office:{monogram:`O`,color:`#D83B01`},moodle:{Icon:_,color:`#F98012`},zoom:{Icon:S,color:`#0B5CFF`},meet:{Icon:p,color:`#00897B`}};function z({name:e,label:t,className:n=`h-5 w-5`}){let r=R[e]??{monogram:String(t??e??`?`).slice(0,2)},i=r.color?{color:r.color}:void 0;return r.Icon?(0,I.jsx)(r.Icon,{"aria-hidden":`true`,className:n,style:i}):(0,I.jsx)(`span`,{"aria-hidden":`true`,style:i,className:`grid place-items-center font-mono text-[0.625rem] font-bold tracking-tight ${n}`,children:r.monogram})}var B=Object.assign({"./content.en.yaml":N,"./content.es.yaml":P});function V(){let e=E(),t=(0,F.useMemo)(()=>D(B,e)??{},[e]),n=t.groups??[];return(0,I.jsxs)(j,{id:`skills`,children:[(0,I.jsx)(k,{eyebrow:t.eyebrow,title:t.title,lead:t.lead}),(0,I.jsx)(`div`,{className:`mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3`,children:n.map((e,t)=>{let r=O(e.icon),i=t===n.length-1,a=i&&n.length%2==1,o=i&&n.length%3==1;return(0,I.jsx)(A,{variants:T,delay:t*.06,className:`min-w-0 ${a?`sm:col-span-2 lg:col-span-1`:``} ${o?`lg:col-start-2`:``}`,children:(0,I.jsxs)(M,{className:`flex h-full flex-col gap-5 p-6`,children:[(0,I.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,I.jsx)(`span`,{className:`grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line bg-surface text-accent-ink shadow-inner-top transition-colors duration-200 group-hover:border-line-accent`,children:(0,I.jsx)(r,{"aria-hidden":`true`,className:`h-[1.15rem] w-[1.15rem]`})}),(0,I.jsx)(`h3`,{className:`text-base font-semibold tracking-tight text-ink`,children:e.title})]}),(0,I.jsx)(`ul`,{className:`flex flex-col gap-4`,children:(e.items??[]).map(t=>(0,I.jsxs)(`li`,{className:`flex flex-col gap-2`,children:[(0,I.jsxs)(`div`,{className:`flex items-center gap-2.5`,children:[(0,I.jsx)(`span`,{className:`grid h-6 w-6 shrink-0 place-items-center rounded-md border border-line bg-surface`,children:t.brand?(0,I.jsx)(z,{name:t.brand,label:t.name,className:`h-3.5 w-3.5`}):(()=>{let n=O(t.icon??e.icon);return(0,I.jsx)(n,{"aria-hidden":`true`,className:`h-3.5 w-3.5 text-ink-subtle`})})()}),t.url?(0,I.jsxs)(`a`,{href:t.url,target:`_blank`,rel:`noreferrer noopener`,className:`inline-flex min-w-0 flex-1 items-center gap-1 text-sm text-ink-muted transition-colors duration-200 hover:text-accent-ink`,children:[t.name,(0,I.jsx)(w.arrowUpRight,{"aria-hidden":`true`,className:`h-3.5 w-3.5`})]}):(0,I.jsx)(`span`,{className:`min-w-0 flex-1 text-sm text-ink-muted`,children:t.name})]}),(0,I.jsx)(L,{level:t.level,label:t.name})]},t.name))})]})},e.title)})}),t.languages?.length?(0,I.jsxs)(A,{className:`mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-line bg-surface px-6 py-4 shadow-inner-top`,children:[(0,I.jsx)(`h3`,{className:`nc-eyebrow`,children:t.languagesTitle}),(0,I.jsx)(`ul`,{className:`flex flex-wrap gap-x-6 gap-y-2`,children:t.languages.map(e=>(0,I.jsxs)(`li`,{className:`text-sm text-ink-muted`,children:[(0,I.jsx)(`span`,{className:`font-medium text-ink`,children:e.name}),(0,I.jsxs)(`span`,{className:`text-ink-subtle`,children:[` · `,e.level]})]},e.name))})]}):null]})}export{V as default};
+`,g=e(t(),1),_=n(),v=Object.assign({"./content.en.yaml":m,"./content.es.yaml":h});function y(){let e=a(),t=(0,g.useMemo)(()=>o(v,e)??{},[e]),n=t.groups??[];return(0,_.jsxs)(u,{id:`skills`,children:[(0,_.jsx)(c,{eyebrow:t.eyebrow,title:t.title,lead:t.lead}),(0,_.jsx)(`div`,{className:`mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3`,children:n.map((e,t)=>{let a=s(e.icon),o=t===n.length-1,c=o&&n.length%2==1,u=o&&n.length%3==1;return(0,_.jsx)(l,{variants:i,delay:t*.06,className:`min-w-0 ${c?`sm:col-span-2 lg:col-span-1`:``} ${u?`lg:col-start-2`:``}`,children:(0,_.jsxs)(p,{className:`flex h-full flex-col gap-5 p-6`,children:[(0,_.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,_.jsx)(`span`,{className:`grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line bg-surface text-accent-ink shadow-inner-top transition-colors duration-200 group-hover:border-line-accent`,children:(0,_.jsx)(a,{"aria-hidden":`true`,className:`h-[1.15rem] w-[1.15rem]`})}),(0,_.jsx)(`h3`,{className:`text-base font-semibold tracking-tight text-ink`,children:e.title})]}),(0,_.jsx)(`ul`,{className:`flex flex-col gap-4`,children:(e.items??[]).map(t=>(0,_.jsxs)(`li`,{className:`flex flex-col gap-2`,children:[(0,_.jsxs)(`div`,{className:`flex items-center gap-2.5`,children:[(0,_.jsx)(`span`,{className:`grid h-6 w-6 shrink-0 place-items-center rounded-md border border-line bg-surface`,children:t.brand?(0,_.jsx)(f,{name:t.brand,label:t.name,className:`h-3.5 w-3.5`}):(()=>{let n=s(t.icon??e.icon);return(0,_.jsx)(n,{"aria-hidden":`true`,className:`h-3.5 w-3.5 text-ink-subtle`})})()}),t.url?(0,_.jsxs)(`a`,{href:t.url,target:`_blank`,rel:`noreferrer noopener`,className:`inline-flex min-w-0 flex-1 items-center gap-1 text-sm text-ink-muted transition-colors duration-200 hover:text-accent-ink`,children:[t.name,(0,_.jsx)(r.arrowUpRight,{"aria-hidden":`true`,className:`h-3.5 w-3.5`})]}):(0,_.jsx)(`span`,{className:`min-w-0 flex-1 text-sm text-ink-muted`,children:t.name})]}),(0,_.jsx)(d,{level:t.level,label:t.name})]},t.name))})]})},e.title)})}),t.languages?.length?(0,_.jsxs)(l,{className:`mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-2xl border border-line bg-surface px-6 py-4 shadow-inner-top`,children:[(0,_.jsx)(`h3`,{className:`nc-eyebrow`,children:t.languagesTitle}),(0,_.jsx)(`ul`,{className:`flex flex-wrap gap-x-6 gap-y-2`,children:t.languages.map(e=>(0,_.jsxs)(`li`,{className:`text-sm text-ink-muted`,children:[(0,_.jsx)(`span`,{className:`font-medium text-ink`,children:e.name}),(0,_.jsxs)(`span`,{className:`text-ink-subtle`,children:[` · `,e.level]})]},e.name))})]}):null]})}export{y as default};
