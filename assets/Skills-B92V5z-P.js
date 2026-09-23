@@ -1,4 +1,4 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{d as t,u as n}from"./motion-D4psEU6N.js";import{l as r,m as i,n as a,s as o,u as s}from"./index-Bj8eHohS.js";import{n as c,r as l,t as u}from"./Section-CyqVXPDk.js";import{n as d,t as f}from"./brands-C0HzMJ6X.js";import{t as p}from"./SpotlightCard-C9IMiyap.js";var m=`# ---------------------------------------------------------------------------\r
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{d as t,u as n}from"./motion-D4psEU6N.js";import{l as r,m as i,n as a,s as o,u as s}from"./index-CUEmubWm.js";import{n as c,r as l,t as u}from"./Section-BhsG-sta.js";import{n as d,t as f}from"./brands-PJEUaxLT.js";import{t as p}from"./SpotlightCard-DamhWKqD.js";var m=`# ---------------------------------------------------------------------------\r
 # TECH STACK — English.\r
 #\r
 # Each block in \`groups\` is a card with its list of skills and the proficiency\r
