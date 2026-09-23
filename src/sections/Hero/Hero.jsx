@@ -82,7 +82,7 @@ export default function Hero() {
               derecha. En móvil se apila y el retrato encabeza la sección.
               Las métricas quedan fuera de esta rejilla para poder ocupar todo
               el ancho, por debajo de ambas columnas. */}
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_420px] lg:gap-14">
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_520px] lg:gap-12">
           {/* Retrato. El parallax va en el contenedor externo y la animación de
               entrada en el interno: si compartieran el mismo `y`, uno anularía
               al otro. */}

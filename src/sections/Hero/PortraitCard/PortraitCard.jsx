@@ -8,10 +8,15 @@ import { EASE_EXPO } from '../../../lib/motion'
  * Recibe la ruta y el texto alternativo desde el padre (`profile.yaml` y
  * `Hero/content.<idioma>.md`).
  *
- * El retrato es una foto con fondo, así que va dentro de un marco redondeado
- * de cristal, con un resplandor rojo difuso detrás que lo separa de la página.
+ * El retrato es un PNG recortado, así que no lleva ni marco ni disco: la
+ * silueta va directamente sobre el fondo de la página, con un resplandor rojo
+ * difuso detrás que la separa sin dibujarle una forma alrededor.
  * Efectos: inclinación 3D siguiendo al cursor y resplandor que late.
  */
+
+// El recorte termina en seco a la altura del pecho; este degradado lo disuelve
+// contra la página en vez de dejar un borde recto.
+const FADE = 'linear-gradient(to bottom, #000 86%, transparent 100%)'
 
 export function PortraitCard({ src, alt, location, width, height }) {
   const prefersReducedMotion = useReducedMotion()
@@ -44,7 +49,7 @@ export function PortraitCard({ src, alt, location, width, height }) {
       // Alineado a la izquierda como el resto del hero, no centrado.
       // El desplazamiento vertical es un `translate`, no un margen: sube el
       // retrato sin alterar la altura de la fila ni mover nada más.
-      className="relative w-full max-w-[15rem] lg:max-w-[420px] lg:-translate-y-10"
+      className="relative w-full max-w-[17rem] lg:max-w-[520px] lg:-translate-y-8"
       style={{ perspective: 1200 }}
     >
       <motion.div
@@ -57,38 +62,32 @@ export function PortraitCard({ src, alt, location, width, height }) {
         }
         className="group relative aspect-square"
       >
-        {/* Resplandor ambiental detrás del marco */}
+        {/* Resplandor ambiental detrás de la silueta */}
         <span
           aria-hidden="true"
           className="animate-glow pointer-events-none absolute inset-[6%] rounded-full bg-accent/35 blur-[70px]"
         />
 
-        <div className="nc-card relative h-full w-full overflow-hidden rounded-[2rem] p-1.5">
-          <img
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            // Es el elemento más grande del primer viewport: se carga sin diferir.
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            draggable="false"
-            className="relative h-full w-full rounded-[1.625rem] object-cover transition-transform duration-500 ease-out select-none group-hover:scale-[1.03]"
-          />
-          {/* Velo inferior: asienta la foto y deja legible el chip de ubicación. */}
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-1.5 bottom-1.5 h-1/4 rounded-b-[1.625rem] bg-gradient-to-t from-canvas-deep/70 to-transparent"
-          />
-        </div>
+        <img
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          // Es el elemento más grande del primer viewport: se carga sin diferir.
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          draggable="false"
+          style={{ maskImage: FADE, WebkitMaskImage: FADE }}
+          className="relative h-full w-full object-contain object-bottom transition-transform duration-500 ease-out select-none group-hover:scale-[1.03]"
+        />
 
         {/* Chip de ubicación. Oculto en móvil, donde el retrato es pequeño y el
             chip lo tapaba; la ubicación sigue estando en contacto y el footer.
             `max-sm:hidden` en vez de `hidden sm:inline-flex` para ganarle al
             `inline-flex` de la propia clase. */}
         {location ? (
-          <span className="absolute bottom-4 left-4 inline-flex items-center gap-1.5 rounded-full border border-line bg-canvas-base/70 py-1 pr-2.5 pl-2 font-mono text-[0.625rem] tracking-wide text-ink backdrop-blur-md max-sm:hidden lg:text-[0.6875rem]">
+          <span className="absolute bottom-1 left-0 inline-flex items-center gap-1.5 rounded-full border border-line bg-canvas-base/70 py-1 pr-2.5 pl-2 font-mono text-[0.625rem] tracking-wide text-ink backdrop-blur-md max-sm:hidden lg:text-[0.6875rem]">
             <ICONS.location aria-hidden="true" className="h-3 w-3 text-accent-ink" />
             {location}
           </span>

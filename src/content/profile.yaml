@@ -15,11 +15,12 @@ location: Colombia
 # cambiarlo basta con dejar el nuevo ahí y escribir su nombre aquí abajo
 # (no hace falta tocar código).
 #
-# Es una foto con fondo, así que el hero la muestra dentro de un marco
-# redondeado. Recomendado: cuadrada, mínimo 600×600 px.
+# Es un recorte con fondo transparente: el hero muestra la silueta directamente
+# sobre el fondo, sin marco. Si algún día pones una foto con fondo, avísame para
+# volver a encuadrarla.
 photo: perfil.webp
-photoWidth: 720
-photoHeight: 720
+photoWidth: 774
+photoHeight: 900
 
 # Redes que se muestran en el header, el footer y la sección de contacto.
 # `icon` acepta: github, linkedin, email, phone, location
