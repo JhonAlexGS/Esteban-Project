@@ -10,141 +10,224 @@
 #   brand → technology logo (optional). Available names live in
 #           `src/components/ui/brands.jsx`; skills that aren't a specific
 #           product (e.g. "Industrial control") are left without `brand`.
+#   url   → link to the tool (optional): with it, the name becomes a link.
+#           The artificial intelligence tools use it.
+#   icon  → skill icon when it isn't a product with a logo. Without one, the
+#           card's icon is used.
 #
 # `icon` is the card icon and accepts: terminal, layers, devops, cloud, server,
 # database, tool, cpu, shield, sun, code, radio, globe, book, award.
 # ---------------------------------------------------------------------------
 
 eyebrow: Tech stack
-title: The tools I build with
-lead: >-
-  From code and CAD design to the PLC, the robot and the solar panel: a stack
-  that covers the whole mechatronics journey, with AI as a cross-cutting layer.
+title: A tool for every idea
+# Optional lead: when empty, the section goes straight from title to cards.
+lead: ''
 
 groups:
   - icon: terminal
     title: Programming
     items:
       - name: Python
-        level: 80
+        level: 65
         brand: python
       - name: Arduino
-        level: 85
+        level: 70
         brand: arduino
       - name: C/C++
-        level: 78
+        level: 62
         brand: cpp
       - name: JavaScript
-        level: 75
+        level: 58
         brand: javascript
       - name: MATLAB
-        level: 75
+        level: 58
         brand: matlab
       - name: HTML/CSS
-        level: 78
+        level: 62
         brand: html
 
   - icon: layers
     title: CAD design
     items:
       - name: SolidWorks
-        level: 75
+        level: 58
         brand: solidworks
       - name: Solid Edge
-        level: 70
+        level: 52
         brand: solidedge
       - name: FreeDFD
-        level: 75
+        level: 58
         brand: freedfd
 
   - icon: tool
     title: Robotics
     items:
       - name: Sensors & actuators
-        level: 88
+        level: 72
+        icon: radio
       - name: Anthropomorphic robotics
-        level: 85
-      - name: Mechanical design
-        level: 80
-      - name: Motion control
         level: 70
+        icon: tool
+      - name: Mechanical design
+        level: 65
+        icon: layers
+      - name: Motion control
+        level: 52
+        icon: activity
 
   - icon: devops
     title: Automation
     items:
       - name: PLC
-        level: 85
+        level: 70
+        icon: cpu
       - name: Industrial control
-        level: 82
+        level: 66
+        icon: server
       - name: Instrumentation
-        level: 80
+        level: 65
+        icon: activity
       - name: SCADA systems
-        level: 78
+        level: 62
+        icon: database
 
+  # Everyday AI tools, each with its logo and link.
   - icon: cpu
     title: Artificial intelligence
     items:
-      - name: Data processing
-        level: 78
-      - name: Machine learning
+      - name: Claude
         level: 75
-      - name: Computer vision
-        level: 72
-      - name: AI-driven automation
+        brand: claude
+        url: https://claude.ai
+      - name: ChatGPT
         level: 70
+        brand: chatgpt
+        url: https://chatgpt.com
+      - name: Gemini
+        level: 65
+        brand: gemini
+        url: https://gemini.google.com
+      - name: Midjourney
+        level: 58
+        brand: midjourney
+        url: https://www.midjourney.com
+      - name: Perplexity
+        level: 52
+        brand: perplexity
+        url: https://www.perplexity.ai
+      - name: ElevenLabs
+        level: 55
+        brand: elevenlabs
+        url: https://elevenlabs.io
+      - name: Seedance
+        level: 50
+        brand: seedance
+        url: https://seedance.ai
+
+  - icon: activity
+    title: Applied AI
+    items:
+      - name: Data processing
+        level: 62
+        icon: database
+      - name: Machine learning
+        level: 58
+        icon: cpu
+      - name: Computer vision
+        level: 55
+        icon: image
+      - name: AI-driven automation
+        level: 52
+        icon: devops
 
   - icon: sun
     title: Solar energy
     items:
       - name: Photovoltaic systems
-        level: 80
+        level: 65
+        icon: sun
       - name: Renewable energy
-        level: 78
+        level: 62
+        icon: sun
       - name: Installation design
-        level: 75
+        level: 58
+        icon: layers
 
   - icon: shield
     title: Cybersecurity
     items:
       - name: Information security
-        level: 75
+        level: 35
+        icon: shield
       - name: Data protection
-        level: 72
-      - name: Vulnerability analysis
-        level: 70
+        level: 32
+        icon: shield
       - name: Secure networks
-        level: 68
+        level: 30
+        icon: globe
+      - name: Vulnerability analysis
+        level: 28
+        icon: search
 
   - icon: code
     title: Tools & software
     items:
       - name: Arduino IDE
-        level: 90
+        level: 75
         brand: arduino
       - name: Microsoft Office
-        level: 90
+        level: 75
         brand: office
       - name: Moodle
-        level: 85
+        level: 70
         brand: moodle
       - name: Adobe Dreamweaver
-        level: 80
+        level: 65
         brand: dreamweaver
       - name: GitHub
-        level: 75
+        level: 58
         brand: github
+      - name: Google Meet
+        level: 72
+        brand: meet
+        url: https://meet.google.com
+      - name: Zoom
+        level: 72
+        brand: zoom
+        url: https://zoom.us
+
+  - icon: box
+    title: Hands-on trades
+    items:
+      - name: Computer assembly & maintenance
+        level: 70
+        icon: monitor
+      - name: General maintenance
+        level: 62
+        icon: tool
+      - name: Carpentry
+        level: 58
+        icon: box
+      - name: Electrical wiring
+        level: 52
+        icon: zap
 
   - icon: award
     title: Management & teaching
     items:
       - name: Administrative management
-        level: 85
+        level: 70
+        icon: award
       - name: Project management
-        level: 82
+        level: 66
+        icon: check
       - name: Pedagogy
-        level: 80
+        level: 65
+        icon: book
       - name: Digital marketing
-        level: 75
+        level: 58
+        icon: globe
 
 languagesTitle: Languages
 languages:

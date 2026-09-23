@@ -4,8 +4,10 @@ import {
   SiC,
   SiClaude,
   SiCplusplus,
+  SiElevenlabs,
   SiGithub,
   SiGooglegemini,
+  SiGooglemeet,
   SiHtml5,
   SiJavascript,
   SiLinux,
@@ -47,6 +49,8 @@ const BRANDS = {
   perplexity: { Icon: SiPerplexity, color: '#20808D' },
   chatgpt: { monogram: 'AI', color: '#10A37F' },
   midjourney: { monogram: 'MJ', color: '#8B7BD8' },
+  elevenlabs: { Icon: SiElevenlabs, color: null },
+  seedance: { monogram: 'SD', color: '#3C8CFF' },
 
   // --- Ingeniería y CAD ---
   matlab: { monogram: 'M', color: '#E16737' },
@@ -60,7 +64,7 @@ const BRANDS = {
   office: { monogram: 'O', color: '#D83B01' },
   moodle: { Icon: SiMoodle, color: '#F98012' },
   zoom: { Icon: SiZoom, color: '#0B5CFF' },
-  meet: { monogram: 'G', color: '#00832D' },
+  meet: { Icon: SiGooglemeet, color: '#00897B' },
 }
 
 /**

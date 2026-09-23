@@ -12,7 +12,7 @@
 #   tags     → tecnologías
 #   icon     → cpu, radio, code, database, cloud, shield, server, terminal,
 #              tool, sun, book...
-#   size     → hero | tall | wide  (controla el tamaño en la grilla)
+#   size     → hero | tall | wide | full  (controla el tamaño en la grilla)
 #   links    → lista de enlaces, cada uno con `label` y `url`.
 #              Puedes poner varios (repo, demo, sitio…) o ninguno:
 #              si la lista está vacía, la tarjeta simplemente no muestra
@@ -20,62 +20,52 @@
 # ---------------------------------------------------------------------------
 
 eyebrow: Proyectos destacados
-title: Soluciones que llevan la ingeniería a la práctica
-lead: >-
-  Inteligencia artificial, energía renovable, presencia web y formación en
-  robótica: los proyectos que mejor resumen cómo trabajo.
+title: En qué he trabajado
+# Entradilla opcional: vacía, la sección pasa directo del titular a las
+# tarjetas.
+lead: ''
 
 items:
-  - id: ia-procesos
-    title: Inteligencia artificial para optimizar procesos
-    kicker: IA aplicada · Grupo Empresarial Colombia GED
-    period: Oct 2023 – Ago 2026
+  - id: multisort-ai
+    title: MultiSort-AI-APP
+    kicker: Tesis de maestría · IA aplicada en GED
+    period: Maestría en IA · 2026
     icon: cpu
     size: hero
     links: []
     summary: >-
-      Implementación de **soluciones con inteligencia artificial** para la
-      optimización de procesos en la empresa. Un trabajo que se cruza con la
-      **Maestría en IA**, donde las aptitudes centrales son **machine
-      learning**, **procesamiento de datos**, **visión artificial** y
-      **automatización con IA**.
-    tags: [Python, Machine Learning, Visión artificial, Procesamiento de datos, Automatización con IA]
+      Aplicación de **inteligencia artificial** desarrollada para **Grupo
+      Empresarial Colombia GED** como proyecto de tesis de la **Maestría en
+      Inteligencia Artificial**. Organiza grandes volúmenes de **imágenes**
+      mediante **filtros y segmentación**, y apoya además la **edición y
+      generación de imágenes** dentro del mismo flujo de trabajo. Es una
+      aplicación de uso interno: corre en local y pertenece a la empresa, así
+      que no tiene repositorio público.
+    tags: [Python, Visión artificial, Segmentación de imágenes, IA generativa, Procesamiento de datos]
 
-  - id: energia-solar
-    title: Sistemas de energía solar fotovoltaica
-    kicker: Energías renovables · Instalación y soporte
-    period: Oct 2023 – Ago 2026
-    icon: sun
-    size: tall
-    links: []
-    summary: >-
-      **Instalación y soporte técnico** de sistemas **fotovoltaicos**,
-      respaldados por la certificación en Sistemas Fotovoltaicos con
-      estándares **NABCEP** (La Escuela Casa Solar, 2024).
-    tags: [Sistemas fotovoltaicos, Diseño de instalaciones, Redes eléctricas, NABCEP]
-
-  - id: sitios-corporativos
-    title: Páginas web corporativas
+  - id: sitio-ged
+    title: Páginas web corporativas de GED y AXCOR
     kicker: Desarrollo web · GED y AXCOR
     period: Dic 2022 – Ago 2026
     icon: code
-    size: wide
+    size: tall
     links: []
     summary: >-
-      **Creación y mantenimiento** de las páginas corporativas de dos empresas,
-      acompañadas de **estrategias de marketing digital** para su
-      posicionamiento y de la gestión de sus redes sociales.
+      **Desarrollo y mantenimiento** de las páginas corporativas de las dos
+      empresas, acompañados del apoyo en **redes sociales** y de las estrategias
+      de **marketing digital** para su posicionamiento.
     tags: [HTML/CSS, JavaScript, Adobe Dreamweaver, Marketing digital]
 
   - id: robotica-educativa
-    title: Curso de robótica educativa y lógica de programación
+    title: Docencia en robótica educativa
     kicker: Docencia · Colegio Enrique Olaya Herrera
     period: Ago 2022 – Dic 2022
     icon: tool
-    size: wide
+    size: full
     links: []
     summary: >-
-      Desarrollo del curso de **lógica de programación en C++** y de
-      formación práctica en **microcontroladores**, aplicando metodologías de
-      **investigación creativa** y contenidos gestionados en **Moodle**.
-    tags: [Robótica, C++, Arduino, Microcontroladores, Moodle]
+      Curso de **lógica de programación en C++** y formación práctica en
+      **microcontroladores**. Con los estudiantes participamos en un **concurso
+      de seguidores de línea** y trabajamos el funcionamiento de los sistemas de
+      un **submarino**: radar, motor y luces.
+    tags: [Robótica, C++, Arduino, Microcontroladores, Seguidor de línea]

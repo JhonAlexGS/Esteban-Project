@@ -15,6 +15,7 @@ const SIZES = {
   hero: 'md:col-span-6 lg:col-span-4 lg:row-span-2',
   tall: 'md:col-span-6 lg:col-span-2 lg:row-span-2',
   wide: 'md:col-span-3 lg:col-span-3',
+  full: 'md:col-span-6 lg:col-span-6',
 }
 
 export function ProjectCard({ project, index = 0 }) {

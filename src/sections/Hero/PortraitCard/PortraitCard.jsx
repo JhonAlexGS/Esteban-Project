@@ -79,7 +79,7 @@ export function PortraitCard({ src, alt, location, width, height }) {
           decoding="async"
           draggable="false"
           style={{ maskImage: FADE, WebkitMaskImage: FADE }}
-          className="relative h-full w-full object-contain object-bottom transition-transform duration-500 ease-out select-none group-hover:scale-[1.03]"
+          className="relative h-full w-full object-contain object-left-bottom transition-transform duration-500 ease-out select-none group-hover:scale-[1.03]"
         />
 
         {/* Chip de ubicación. Oculto en móvil, donde el retrato es pequeño y el

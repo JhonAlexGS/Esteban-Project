@@ -10,141 +10,225 @@
 #   brand → logo de la tecnología (opcional). Los nombres disponibles están en
 #           `src/components/ui/brands.jsx`; si una habilidad no es un producto
 #           concreto (por ejemplo «Control industrial»), se deja sin `brand`.
+#   url   → enlace a la herramienta (opcional): con él, el nombre se vuelve un
+#           enlace. Lo usan las herramientas de inteligencia artificial.
+#   icon  → ícono de la habilidad cuando no es un producto con logo. Si no se
+#           pone ninguno, se usa el ícono de la tarjeta.
 #
 # `icon` es el ícono de la tarjeta y acepta: terminal, layers, devops, cloud,
 # server, database, tool, cpu, shield, sun, code, radio, globe, book, award.
 # ---------------------------------------------------------------------------
 
 eyebrow: Stack técnico
-title: Las herramientas con las que construyo
-lead: >-
-  Del código y el diseño CAD al PLC, el robot y el panel solar: un stack que
-  cubre el recorrido completo de la mecatrónica, con la IA como capa transversal.
+title: Una herramienta para cada idea
+# Entradilla opcional: vacía, la sección pasa directo del titular a las
+# tarjetas.
+lead: ''
 
 groups:
   - icon: terminal
     title: Programación
     items:
       - name: Python
-        level: 80
+        level: 65
         brand: python
       - name: Arduino
-        level: 85
+        level: 70
         brand: arduino
       - name: C/C++
-        level: 78
+        level: 62
         brand: cpp
       - name: JavaScript
-        level: 75
+        level: 58
         brand: javascript
       - name: MATLAB
-        level: 75
+        level: 58
         brand: matlab
       - name: HTML/CSS
-        level: 78
+        level: 62
         brand: html
 
   - icon: layers
     title: Diseño CAD
     items:
       - name: SolidWorks
-        level: 75
+        level: 58
         brand: solidworks
       - name: Solid Edge
-        level: 70
+        level: 52
         brand: solidedge
       - name: FreeDFD
-        level: 75
+        level: 58
         brand: freedfd
 
   - icon: tool
     title: Robótica
     items:
       - name: Sensores y actuadores
-        level: 88
+        level: 72
+        icon: radio
       - name: Robótica antropomórfica
-        level: 85
-      - name: Diseño mecánico
-        level: 80
-      - name: Control de movimiento
         level: 70
+        icon: tool
+      - name: Diseño mecánico
+        level: 65
+        icon: layers
+      - name: Control de movimiento
+        level: 52
+        icon: activity
 
   - icon: devops
     title: Automatización
     items:
       - name: PLC
-        level: 85
+        level: 70
+        icon: cpu
       - name: Control industrial
-        level: 82
+        level: 66
+        icon: server
       - name: Instrumentación
-        level: 80
+        level: 65
+        icon: activity
       - name: Sistemas SCADA
-        level: 78
+        level: 62
+        icon: database
 
+  # Herramientas de IA de uso diario, cada una con su logo y su enlace.
   - icon: cpu
     title: Inteligencia artificial
     items:
-      - name: Procesamiento de datos
-        level: 78
-      - name: Machine learning
+      - name: Claude
         level: 75
-      - name: Visión artificial
-        level: 72
-      - name: Automatización con IA
+        brand: claude
+        url: https://claude.ai
+      - name: ChatGPT
         level: 70
+        brand: chatgpt
+        url: https://chatgpt.com
+      - name: Gemini
+        level: 65
+        brand: gemini
+        url: https://gemini.google.com
+      - name: Midjourney
+        level: 58
+        brand: midjourney
+        url: https://www.midjourney.com
+      - name: Perplexity
+        level: 52
+        brand: perplexity
+        url: https://www.perplexity.ai
+      - name: ElevenLabs
+        level: 55
+        brand: elevenlabs
+        url: https://elevenlabs.io
+      - name: Seedance
+        level: 50
+        brand: seedance
+        url: https://seedance.ai
+
+  - icon: activity
+    title: IA aplicada
+    items:
+      - name: Procesamiento de datos
+        level: 62
+        icon: database
+      - name: Machine learning
+        level: 58
+        icon: cpu
+      - name: Visión artificial
+        level: 55
+        icon: image
+      - name: Automatización con IA
+        level: 52
+        icon: devops
 
   - icon: sun
     title: Energía solar
     items:
       - name: Sistemas fotovoltaicos
-        level: 80
+        level: 65
+        icon: sun
       - name: Energías renovables
-        level: 78
+        level: 62
+        icon: sun
       - name: Diseño de instalaciones
-        level: 75
+        level: 58
+        icon: layers
 
   - icon: shield
     title: Ciberseguridad
     items:
       - name: Seguridad informática
-        level: 75
+        level: 35
+        icon: shield
       - name: Protección de datos
-        level: 72
-      - name: Análisis de vulnerabilidades
-        level: 70
+        level: 32
+        icon: shield
       - name: Redes seguras
-        level: 68
+        level: 30
+        icon: globe
+      - name: Análisis de vulnerabilidades
+        level: 28
+        icon: search
 
   - icon: code
     title: Herramientas y software
     items:
       - name: Arduino IDE
-        level: 90
+        level: 75
         brand: arduino
       - name: Microsoft Office
-        level: 90
+        level: 75
         brand: office
       - name: Moodle
-        level: 85
+        level: 70
         brand: moodle
       - name: Adobe Dreamweaver
-        level: 80
+        level: 65
         brand: dreamweaver
       - name: GitHub
-        level: 75
+        level: 58
         brand: github
+      - name: Google Meet
+        level: 72
+        brand: meet
+        url: https://meet.google.com
+      - name: Zoom
+        level: 72
+        brand: zoom
+        url: https://zoom.us
+
+  - icon: box
+    title: Oficios prácticos
+    items:
+      - name: Mantenimiento y armado de computadores
+        level: 70
+        icon: monitor
+      - name: Mantenimiento general
+        level: 62
+        icon: tool
+      - name: Carpintería
+        level: 58
+        icon: box
+      - name: Redes eléctricas
+        level: 52
+        icon: zap
 
   - icon: award
     title: Gestión y docencia
     items:
       - name: Gerencia administrativa
-        level: 85
+        level: 70
+        icon: award
       - name: Gestión de proyectos
-        level: 82
+        level: 66
+        icon: check
       - name: Pedagogía
-        level: 80
+        level: 65
+        icon: book
       - name: Marketing digital
-        level: 75
+        level: 58
+        icon: globe
 
 languagesTitle: Idiomas
 languages:

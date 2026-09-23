@@ -30,8 +30,6 @@ stats:
 scrollHint: Desliza para explorar
 ---
 
-Robótica y control, ahora con **inteligencia artificial**. Cuatro años dando
-soporte a **sistemas, redes y equipos**, desarrollando **páginas web
-corporativas**, implementando **soluciones de IA para optimizar procesos** y
-apoyando instalaciones de **energía solar**. Programo en **Python**, **C/C++**,
-**MATLAB** y **Arduino**, y diseño en CAD con **SolidWorks**.
+Me gusta entender cómo funciona algo antes de tocarlo: desarmar, medir, probar
+y volver a armar. Cada uno de esos pasos me enseñó algo sobre resolver problemas
+con lo que hay a mano.

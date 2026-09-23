@@ -12,68 +12,58 @@
 #   tags     → technologies
 #   icon     → cpu, radio, code, database, cloud, shield, server, terminal,
 #              tool, sun, book...
-#   size     → hero | tall | wide  (controls the size in the grid)
+#   size     → hero | tall | wide | full  (controls the size in the grid)
 #   links    → list of links, each with `label` and `url`.
 #              Add several (repo, demo, site…) or none: with an empty list
 #              the card simply shows no buttons.
 # ---------------------------------------------------------------------------
 
 eyebrow: Featured projects
-title: Solutions that put engineering into practice
-lead: >-
-  Artificial intelligence, renewable energy, web presence and robotics
-  education: the projects that best describe how I work.
+title: What I've worked on
+# Optional lead: when empty, the section goes straight from title to cards.
+lead: ''
 
 items:
-  - id: ia-procesos
-    title: Artificial intelligence to optimize processes
-    kicker: Applied AI · Grupo Empresarial Colombia GED
-    period: Oct 2023 – Aug 2026
+  - id: multisort-ai
+    title: MultiSort-AI-APP
+    kicker: Master's thesis · Applied AI at GED
+    period: MSc in AI · 2026
     icon: cpu
     size: hero
     links: []
     summary: >-
-      Implemented **artificial intelligence solutions** to optimize the
-      company's processes. Work that overlaps with the **Master's in AI**,
-      whose core skills are **machine learning**, **data processing**,
-      **computer vision** and **AI-driven automation**.
-    tags: [Python, Machine Learning, Computer vision, Data processing, AI automation]
+      An **artificial intelligence** application built for **Grupo Empresarial
+      Colombia GED** as the thesis project of the **Master's in Artificial
+      Intelligence**. It organizes large volumes of **images** through
+      **filters and segmentation**, and also supports **image editing and
+      generation** within the same workflow. It is an internal application: it
+      runs locally and belongs to the company, so it has no public
+      repository.
+    tags: [Python, Computer vision, Image segmentation, Generative AI, Data processing]
 
-  - id: energia-solar
-    title: Photovoltaic solar energy systems
-    kicker: Renewable energy · Installation & support
-    period: Oct 2023 – Aug 2026
-    icon: sun
+  - id: sitio-ged
+    title: GED and AXCOR corporate websites
+    kicker: Web development · GED and AXCOR
+    period: Dec 2022 – Aug 2026
+    icon: code
     size: tall
     links: []
     summary: >-
-      **Installation and technical support** of **photovoltaic** systems,
-      backed by a Photovoltaic Systems certification under **NABCEP**
-      standards (La Escuela Casa Solar, 2024).
-    tags: [Photovoltaic systems, Installation design, Electrical networks, NABCEP]
-
-  - id: sitios-corporativos
-    title: Corporate websites
-    kicker: Web development · GED & AXCOR
-    period: Dec 2022 – Aug 2026
-    icon: code
-    size: wide
-    links: []
-    summary: >-
-      **Built and maintained** the corporate websites of two companies,
-      together with **digital marketing strategies** for their positioning and
-      the management of their social media.
+      **Development and maintenance** of both companies' corporate websites,
+      alongside support for **social media** and the **digital marketing**
+      strategies behind their positioning.
     tags: [HTML/CSS, JavaScript, Adobe Dreamweaver, Digital marketing]
 
   - id: robotica-educativa
-    title: Educational robotics & programming logic course
+    title: Teaching educational robotics
     kicker: Teaching · Colegio Enrique Olaya Herrera
     period: Aug 2022 – Dec 2022
     icon: tool
-    size: wide
+    size: full
     links: []
     summary: >-
-      Developed the **C++ programming logic** course and hands-on
-      training on **microcontrollers**, applying **creative research**
-      methodologies with course content managed on **Moodle**.
-    tags: [Robotics, C++, Arduino, Microcontrollers, Moodle]
+      A **C++ programming logic** course and hands-on training on
+      **microcontrollers**. With the students we took part in a **line-follower
+      contest** and worked through the systems of a **submarine**: radar, motor
+      and lights.
+    tags: [Robotics, C++, Arduino, Microcontrollers, Line follower]

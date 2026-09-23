@@ -29,8 +29,6 @@ stats:
 scrollHint: Scroll to explore
 ---
 
-Robotics and control, now powered by **artificial intelligence**. Four years
-supporting **systems, networks and hardware**, building **corporate websites**,
-implementing **AI solutions to optimize processes** and backing **solar energy**
-installations. I code in **Python**, **C/C++**, **MATLAB** and **Arduino**, and
-design in CAD with **SolidWorks**.
+I like to understand how something works before touching it: take it apart,
+measure, test and put it back together. Each one of those steps taught me
+something about solving problems with what's at hand.

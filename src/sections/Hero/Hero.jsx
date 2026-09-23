@@ -82,7 +82,7 @@ export default function Hero() {
               derecha. En móvil se apila y el retrato encabeza la sección.
               Las métricas quedan fuera de esta rejilla para poder ocupar todo
               el ancho, por debajo de ambas columnas. */}
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_520px] lg:gap-12">
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_520px] lg:gap-4">
           {/* Retrato. El parallax va en el contenedor externo y la animación de
               entrada en el interno: si compartieran el mismo `y`, uno anularía
               al otro. */}
@@ -198,7 +198,7 @@ export default function Hero() {
             {stats.map((stat) => (
               <div
                 key={stat.value}
-                className="flex flex-col gap-1 bg-canvas-base/60 p-5 backdrop-blur-sm transition-colors duration-200 hover:bg-surface-hover"
+                className="flex flex-col items-center gap-1 bg-canvas-base/60 p-5 text-center backdrop-blur-sm transition-colors duration-200 hover:bg-surface-hover"
               >
                 {/* El pie es opcional: sin él, la cifra queda sola. */}
                 {stat.label ? <dt className="sr-only">{stat.label}</dt> : null}

@@ -7,10 +7,10 @@
 # ---------------------------------------------------------------------------
 
 eyebrow: Formación
-title: De la ingeniería mecatrónica a la inteligencia artificial
-lead: >-
-  Ingeniería en CORHUILA, maestría en la Universidad Sergio Arboleda y una capa
-  constante de certificaciones en ciberseguridad, energía solar, PLC e IA.
+title: Mi formación académica
+# Entradilla opcional: vacía, la sección pasa directo del titular a las
+# titulaciones.
+lead: ''
 
 programs:
   - level: MSc

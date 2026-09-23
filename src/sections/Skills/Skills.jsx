@@ -4,7 +4,7 @@ import { Reveal } from '../../components/ui/Reveal'
 import { Section, SectionHeading } from '../../components/ui/Section'
 import { SpotlightCard } from '../../components/ui/SpotlightCard'
 import { Brand } from '../../components/ui/brands'
-import { getIcon } from '../../components/ui/icons'
+import { getIcon, ICONS } from '../../components/ui/icons'
 import { useLang } from '../../hooks/useLang'
 import { pickYaml } from '../../lib/content'
 import { scaleIn } from '../../lib/motion'
@@ -28,15 +28,19 @@ export default function Skills() {
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3">
         {groups.map((group, index) => {
           const Icon = getIcon(group.icon)
+          const esUltima = index === groups.length - 1
           // Con un número impar de tarjetas, la última quedaría sola en su fila
           // de dos columnas; se estira para cerrar el hueco.
-          const cierraFila = index === groups.length - 1 && groups.length % 2 === 1
+          const cierraFila = esUltima && groups.length % 2 === 1
+          // En escritorio (tres columnas) puede quedar sola en la última fila:
+          // se centra para que el hueco se vea intencionado.
+          const solaEnEscritorio = esUltima && groups.length % 3 === 1
           return (
             <Reveal
               key={group.title}
               variants={scaleIn}
               delay={index * 0.06}
-              className={`min-w-0 ${cierraFila ? 'sm:col-span-2 lg:col-span-1' : ''}`}
+              className={`min-w-0 ${cierraFila ? 'sm:col-span-2 lg:col-span-1' : ''} ${solaEnEscritorio ? 'lg:col-start-2' : ''}`}
             >
               <SpotlightCard className="flex h-full flex-col gap-5 p-6">
                 <div className="flex items-center gap-3">
@@ -52,15 +56,35 @@ export default function Skills() {
                   {(group.items ?? []).map((item) => (
                     <li key={item.name} className="flex flex-col gap-2">
                       <div className="flex items-center gap-2.5">
-                        {/* El logo sólo aparece si la tecnología tiene marca
-                            (`brand` en el YAML); las habilidades genéricas van
-                            sin él. */}
-                        {item.brand ? (
-                          <span className="grid h-6 w-6 shrink-0 place-items-center rounded-md border border-line bg-surface">
+                        {/* Cada fila lleva su cuadro: el logo de la marca si la
+                            tecnología lo tiene (`brand`), y si no, el ícono de
+                            la habilidad (`icon`) o, en su defecto, el de la
+                            tarjeta. */}
+                        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-md border border-line bg-surface">
+                          {item.brand ? (
                             <Brand name={item.brand} label={item.name} className="h-3.5 w-3.5" />
-                          </span>
-                        ) : null}
-                        <span className="min-w-0 flex-1 text-sm text-ink-muted">{item.name}</span>
+                          ) : (
+                            (() => {
+                              const ItemIcon = getIcon(item.icon ?? group.icon)
+                              return <ItemIcon aria-hidden="true" className="h-3.5 w-3.5 text-ink-subtle" />
+                            })()
+                          )}
+                        </span>
+                        {/* `url` es opcional: con él, el nombre enlaza a la
+                            herramienta; sin él es texto normal. */}
+                        {item.url ? (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            className="inline-flex min-w-0 flex-1 items-center gap-1 text-sm text-ink-muted transition-colors duration-200 hover:text-accent-ink"
+                          >
+                            {item.name}
+                            <ICONS.arrowUpRight aria-hidden="true" className="h-3.5 w-3.5" />
+                          </a>
+                        ) : (
+                          <span className="min-w-0 flex-1 text-sm text-ink-muted">{item.name}</span>
+                        )}
                       </div>
                       <LevelBar level={item.level} label={item.name} />
                     </li>

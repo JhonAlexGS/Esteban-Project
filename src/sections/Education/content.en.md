@@ -7,10 +7,9 @@
 # ---------------------------------------------------------------------------
 
 eyebrow: Education
-title: From mechatronics engineering to artificial intelligence
-lead: >-
-  Engineering at CORHUILA, a master's at Universidad Sergio Arboleda and a
-  steady layer of certifications in cybersecurity, solar energy, PLCs and AI.
+title: My academic background
+# Optional lead: when empty, the section goes straight from title to programs.
+lead: ''
 
 programs:
   - level: MSc

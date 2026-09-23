@@ -106,7 +106,7 @@ export default function Education() {
                 key={`${certification.issuer}-${certification.year}-${certification.name}`}
                 variants={fadeUp}
                 delay={index * 0.05}
-                className={`min-w-0 rounded-2xl border border-line bg-surface p-4 shadow-inner-top transition-colors duration-200 hover:border-line-accent hover:bg-surface-hover ${cierraEnDos ? 'sm:col-span-2' : ''} ${cierraEnTres ? 'lg:col-span-3' : ''}`}
+                className={`min-w-0 rounded-2xl border border-line bg-surface p-4 shadow-inner-top transition-colors duration-200 hover:border-line-accent hover:bg-surface-hover ${cierraEnDos ? 'sm:col-span-2' : ''} ${cierraEnTres ? 'lg:col-span-3' : 'lg:col-span-1'}`}
               >
                 <p className="flex items-baseline justify-between gap-3 text-sm font-medium text-ink">
                   {certification.issuer}

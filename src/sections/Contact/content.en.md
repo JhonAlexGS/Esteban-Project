@@ -7,12 +7,15 @@
 eyebrow: Contact
 title: Shall we build something together?
 lead: >-
-  I'm open to automation, robotics, artificial intelligence, solar energy and
-  technology teaching projects. Write to me and I'll get back to you.
+  I'm open to projects and job offers: automation, robotics, artificial
+  intelligence, solar energy or technology teaching. Write to me and I'll get
+  back to you.
 
 channelsTitle: Direct channels
 ---
 
-If your institution or company wants to **automate, optimize a process with AI
-or teach robotics**, that's exactly the kind of challenge I enjoy. Tell me what
-you're working on and we'll figure out where to start.
+If your company or institution needs to **automate a process**, **optimize it
+with artificial intelligence**, **teach robotics**, **build a website** or
+**assemble a computer** tailored to what's needed, that's exactly the kind of
+challenge I enjoy. Tell me what you're working on and we'll figure out where to
+start.
