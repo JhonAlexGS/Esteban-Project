@@ -25,6 +25,8 @@ actions:
   toggleLanguage: Cambiar idioma
   skipToContent: Saltar al contenido
   close: Cerrar
+  prev: Anterior
+  next: Siguiente
   readFull: Leer completo
   readFullOf: Leer el testimonio completo de {{name}}
 

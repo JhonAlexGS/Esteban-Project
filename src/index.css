@@ -421,6 +421,47 @@
     }
   }
 
+  /* Vía de tren de «Perfil profesional»: dos rieles paralelos con sus
+     traviesas. Se dibuja con degradados, sin imágenes: la primera capa son los
+     dos rieles y la segunda las traviesas repetidas. El recorte de los
+     extremos evita que la vía choque contra el borde de la sección. */
+  .nc-rail {
+    background-image:
+      linear-gradient(
+        to bottom,
+        var(--line-accent) 0 1px,
+        transparent 1px 9px,
+        var(--line-accent) 9px 10px
+      ),
+      repeating-linear-gradient(to right, var(--line-hover) 0 2px, transparent 2px 16px);
+    background-size:
+      100% 10px,
+      100% 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+
+  /* La misma vía, girada para el móvil. */
+  .nc-rail-vertical {
+    background-image:
+      linear-gradient(
+        to right,
+        var(--line-accent) 0 1px,
+        transparent 1px 9px,
+        var(--line-accent) 9px 10px
+      ),
+      repeating-linear-gradient(to bottom, var(--line-hover) 0 2px, transparent 2px 16px);
+    background-size:
+      10px 100%,
+      10px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 8%, #000 92%, transparent);
+  }
+
   /* Línea divisoria degradada entre secciones. */
   .nc-divider {
     height: 1px;

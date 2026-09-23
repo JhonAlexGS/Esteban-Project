@@ -25,28 +25,6 @@ title: A tool for every idea
 lead: ''
 
 groups:
-  - icon: terminal
-    title: Programming
-    items:
-      - name: Python
-        level: 65
-        brand: python
-      - name: Arduino
-        level: 70
-        brand: arduino
-      - name: C/C++
-        level: 62
-        brand: cpp
-      - name: JavaScript
-        level: 58
-        brand: javascript
-      - name: MATLAB
-        level: 58
-        brand: matlab
-      - name: HTML/CSS
-        level: 62
-        brand: html
-
   - icon: layers
     title: CAD design
     items:
@@ -59,22 +37,6 @@ groups:
       - name: FreeDFD
         level: 58
         brand: freedfd
-
-  - icon: tool
-    title: Robotics
-    items:
-      - name: Sensors & actuators
-        level: 72
-        icon: radio
-      - name: Anthropomorphic robotics
-        level: 70
-        icon: tool
-      - name: Mechanical design
-        level: 65
-        icon: layers
-      - name: Motion control
-        level: 52
-        icon: activity
 
   - icon: devops
     title: Automation
@@ -196,22 +158,6 @@ groups:
         level: 72
         brand: zoom
         url: https://zoom.us
-
-  - icon: box
-    title: Hands-on trades
-    items:
-      - name: Computer assembly & maintenance
-        level: 70
-        icon: monitor
-      - name: General maintenance
-        level: 62
-        icon: tool
-      - name: Carpentry
-        level: 58
-        icon: box
-      - name: Electrical wiring
-        level: 52
-        icon: zap
 
   - icon: award
     title: Management & teaching

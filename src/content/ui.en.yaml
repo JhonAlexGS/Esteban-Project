@@ -25,6 +25,8 @@ actions:
   toggleLanguage: Change language
   skipToContent: Skip to content
   close: Close
+  prev: Previous
+  next: Next
   readFull: Read in full
   readFullOf: Read the full testimonial from {{name}}
 

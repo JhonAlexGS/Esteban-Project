@@ -1,12 +1,10 @@
 import { useMemo } from 'react'
 import { Reveal } from '../../components/ui/Reveal'
 import { Section, SectionHeading } from '../../components/ui/Section'
-import { SpotlightCard } from '../../components/ui/SpotlightCard'
-import { getIcon } from '../../components/ui/icons'
 import { Markdown } from '../../components/ui/Markdown'
 import { useLang } from '../../hooks/useLang'
 import { pickMarkdown } from '../../lib/content'
-import { scaleIn } from '../../lib/motion'
+import { ProfileCarousel } from './ProfileCarousel/ProfileCarousel'
 
 // Contenido editable de esta sección: `content.es.md` / `content.en.md`.
 // La experiencia laboral vive en su propia sección: `src/sections/Experience/`.
@@ -24,31 +22,21 @@ export default function About() {
     <Section id="about">
       <SectionHeading eyebrow={data.eyebrow} title={data.title} lead={data.lead} />
 
-      <div className="mt-12 grid gap-10 lg:mt-16 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+      {/* `items-start`: el texto arranca justo debajo del titular de la sección.
+          Con `items-center` quedaba centrado contra el carrusel, que es más
+          alto, y se abría un hueco grande bajo el título. */}
+      <div className="mt-10 grid items-start gap-12 lg:mt-12 lg:grid-cols-[1fr_minmax(0,32rem)] lg:gap-10">
         <Reveal className="max-w-2xl">
           <Markdown>{body}</Markdown>
         </Reveal>
 
-        {/* Pilares del perfil */}
-        <div className="grid content-start gap-4 sm:grid-cols-2">
-          {(data.pillars ?? []).map((pillar, index) => {
-            const Icon = getIcon(pillar.icon)
-            return (
-              <Reveal key={pillar.title} variants={scaleIn} delay={index * 0.08}>
-                <SpotlightCard className="flex h-full flex-col gap-3 p-5">
-                  <span className="grid h-10 w-10 place-items-center rounded-xl border border-line bg-surface text-accent-ink shadow-inner-top transition-colors duration-200 group-hover:border-line-accent">
-                    <Icon aria-hidden="true" className="h-[1.15rem] w-[1.15rem]" />
-                  </span>
-                  <h3 className="text-base font-semibold tracking-tight text-ink">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-ink-muted">{pillar.text}</p>
-                </SpotlightCard>
-              </Reveal>
-            )
-          })}
-        </div>
+        {/* Los cuatro frentes de trabajo, en carrusel: la tarjeta activa va al
+            frente y las vecinas se alejan hacia los lados. */}
+        <Reveal>
+          <ProfileCarousel items={data.pillars ?? []} />
+        </Reveal>
       </div>
+
     </Section>
   )
 }
