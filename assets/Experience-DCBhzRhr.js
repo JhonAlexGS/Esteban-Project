@@ -1,4 +1,4 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{d as t,u as n}from"./motion-D4psEU6N.js";import{n as r,p as i,s as a}from"./index-Cbg2B4r5.js";import{n as o,r as s,t as c}from"./Section-B38RfVrf.js";var l=`# ---------------------------------------------------------------------------\r
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{d as t,u as n}from"./motion-D4psEU6N.js";import{n as r,p as i,s as a}from"./index-sGxW7g-M.js";import{n as o,r as s,t as c}from"./Section-BicXDDXv.js";var l=`# ---------------------------------------------------------------------------\r
 # WORK EXPERIENCE — English.\r
 #\r
 # \`items\` is the list of jobs, from most recent to oldest.\r

@@ -1,40 +1,45 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{c as t,d as n,l as r,u as i}from"./motion-D4psEU6N.js";import{a,c as o,d as s,l as c,m as l,n as u,o as d,r as f,s as p,t as m,u as h}from"./index-Cbg2B4r5.js";import{n as g,r as _,t as v}from"./Section-B38RfVrf.js";import{a as y,i as b,n as x,r as S,t as C}from"./forms-DVNCz3tj.js";var w=`---
-# ---------------------------------------------------------------------------
-# CONTACT — English (narrative copy).
-# Form labels and messages live in \`form.en.yaml\`.
-# ---------------------------------------------------------------------------
-
-eyebrow: Contact
-title: Shall we build something together?
-lead: >-
-  I'm open to automation, robotics, artificial intelligence, solar energy and
-  technology teaching projects. Write to me and I'll get back to you.
-
-channelsTitle: Direct channels
----
-
-If your institution or company wants to **automate, optimize a process with AI
-or teach robotics**, that's exactly the kind of challenge I enjoy. Tell me what
-you're working on and we'll figure out where to start.
-`,T=`---
-# ---------------------------------------------------------------------------
-# CONTACTO — español (textos narrativos).
-# Las etiquetas y los mensajes del formulario están en \`form.es.yaml\`.
-# ---------------------------------------------------------------------------
-
-eyebrow: Contacto
-title: ¿Construimos algo juntos?
-lead: >-
-  Estoy abierto a proyectos de automatización, robótica, soluciones con
-  inteligencia artificial, energía solar y docencia en tecnología. Escríbeme y
-  te respondo.
-
-channelsTitle: Canales directos
----
-
-Si tu institución o empresa busca **automatizar, optimizar un proceso con IA o
-enseñar robótica**, es justamente el tipo de reto que me gusta. Cuéntame en qué
-estás trabajando y buscamos juntos por dónde empezar.
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{c as t,d as n,l as r,u as i}from"./motion-D4psEU6N.js";import{a,c as o,d as s,l as c,m as l,n as u,o as d,r as f,s as p,t as m,u as h}from"./index-sGxW7g-M.js";import{n as g,r as _,t as v}from"./Section-BicXDDXv.js";import{a as y,i as b,n as x,r as S,t as C}from"./forms-DVNCz3tj.js";var w=`---\r
+# ---------------------------------------------------------------------------\r
+# CONTACT — English (narrative copy).\r
+# Form labels and messages live in \`form.en.yaml\`.\r
+# ---------------------------------------------------------------------------\r
+\r
+eyebrow: Contact\r
+title: Shall we build something together?\r
+lead: >-\r
+  I'm open to projects and job offers: automation, robotics, artificial\r
+  intelligence, solar energy or technology teaching. Write to me and I'll get\r
+  back to you.\r
+\r
+channelsTitle: Direct channels\r
+---\r
+\r
+If your company or institution needs to **automate a process**, **optimize it\r
+with artificial intelligence**, **teach robotics**, **build a website** or\r
+**assemble a computer** tailored to what's needed, that's exactly the kind of\r
+challenge I enjoy. Tell me what you're working on and we'll figure out where to\r
+start.\r
+`,T=`---\r
+# ---------------------------------------------------------------------------\r
+# CONTACTO — español (textos narrativos).\r
+# Las etiquetas y los mensajes del formulario están en \`form.es.yaml\`.\r
+# ---------------------------------------------------------------------------\r
+\r
+eyebrow: Contacto\r
+title: ¿Construimos algo juntos?\r
+lead: >-\r
+  Estoy abierto a proyectos y a ofertas de empleo: automatización, robótica,\r
+  soluciones con inteligencia artificial, energía solar o docencia en\r
+  tecnología. Escríbeme y te respondo.\r
+\r
+channelsTitle: Canales directos\r
+---\r
+\r
+Si tu empresa o institución necesita **automatizar un proceso**, **optimizarlo\r
+con inteligencia artificial**, **enseñar robótica**, **crear una página web** o\r
+**armar un computador** a la medida de lo que hace falta, ese es justo el tipo\r
+de reto que me gusta. Cuéntame en qué estás trabajando y buscamos juntos por\r
+dónde empezar.\r
 `,E=`# ---------------------------------------------------------------------------\r
 # CONTACT FORM — English.\r
 # Labels, helper text and validation messages. Change any sentence without\r
